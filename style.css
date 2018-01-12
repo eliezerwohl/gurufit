@@ -11,9 +11,9 @@ html, body {
 	font-family: 'Roboto', sans-serif;
 }
 
-img {
+/*img {
   vertical-align: bottom;
-}
+}*/
 a {
 	color: #2a0d45;
 }
@@ -32,7 +32,8 @@ h1, h2, h3, h4, h5, p {
 
 h2 {
 	text-align: center;
-	margin-bottom: 50px;
+	font-size: 40px;
+	font-weight: bold;
 }
 p {
 	margin-bottom: 20px;
@@ -188,9 +189,9 @@ h1.title a:hover {
 }
 
 .page-template-home .hero {
-	min-height: 100vh;
+	height: calc(100vh - 70px);
 	width: 100%;
-	background-image: url(img/home-hero.png);
+	background-image: url(img/home-hero.jpg);
 	background-repeat: no-repeat;
 	background-size: cover;
 	display: table;
@@ -214,6 +215,41 @@ h1.title a:hover {
 	font-size: 30px;
 	font-weight: bold;
 }
+
+.page-template-home .about-me {
+	margin-top: 50px;
+	margin-bottom: 50px;
+}
+
+.page-template-home .about-me img {
+	width:auto;
+	height: 400px;
+}
+
+.page-template-home .about-me .img-container{
+  text-align: center;
+}
+
+
+.page-template-home
+.parallax-home { 
+    background-image: url("img/parallax-weight-lifting.png");
+    height: 150px; 
+    width: 100%;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: table;
+}
+.page-template-home
+.parallax-home h2 {
+	display: table-cell;
+	vertical-align: middle;
+	color: white;
+	text-align: center;
+}
+
 
 @media (min-width: 767px) {
 	.page-template-home .container {
@@ -338,17 +374,14 @@ h1.title a:hover {
 
 footer {
 	padding: 20px 15px;
-	color: #273676;
-	background-color: #e8ebf7;
+	color: white;
+	background-color: #b7b7b7;
 }
 
 footer a {
-	color: #273676 !important;
+	color: white !important;
 }
 
-footer .contact {
-	margin-bottom: 10px;
-}
 
 footer .contact-me {
 	padding:10px 10px;
@@ -357,11 +390,14 @@ footer .contact-me:hover {
 	color: #23527c;
 }	
 
-footer .divider{ 
-	padding: 0px 10px;
+
+footer .bottom-contact {
+	display: inline-block;
+	width: 100%;
+	padding-top: 10px;
 }
 @media(max-width: 767px){
-	footer .contact-me, footer .bottom-contact {
+	footer .contact-me {
 		display: inline-block;
 		width: 100%;
 		padding: 10px;

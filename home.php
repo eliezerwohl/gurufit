@@ -1,13 +1,44 @@
 <?php /* Template Name: Home */ ?>
 <?php get_header(); ?>
 <div class='hero'>
-    <div class="center">
-        <img src="<?php bloginfo('template_url'); ?>/img/logo-yellow.png">
-        <p>Custom fitness plans - for you and your lifestyle</p>
-    </div>
-
+  <div class="center">
+    <img src="<?php bloginfo('template_url'); ?>/img/logo-yellow.png">
+    <p>Custom fitness plans - for you and your lifestyle</p>
+  </div>
 </div>
-
+<div class="container about-me">
+  <div class="row">
+    <div class="col-md-6">
+      <h2>About Me</h2>
+      <p>I’m Eric Gonzalez, a Certified Personal Trainer with 
+      specializations in Performance Enhancement and 
+      Corrective Exercise through the National Academy
+      of Sports Medicine. I’m also a Registered Yoga 
+      Teacher through the Yoga Alliance (RYT-200).
+      </p>
+      <p>I work work with individuals and teams in the NY Metro
+      and Central Jersey area to help them reach their fitness 
+      goals. Through my experience as Strength and Conditioning 
+      Coach for the Jersey Sharks Football Team, I balance 
+      individual strengths against each other to create a unified 
+      whole. When working one-on-one with clients my experience 
+      as a Physical Therapy Assistant allows me to adapt exercises 
+      to fit most physical constraints.</p>
+      <p>You don’t have to be a heavyweight champion to 
+      get healthy! Contact me for a free consultation. 
+      More…</p>
+      <div class="btn-holder text-center">
+        <button class="btn btn-default">Free Consultation</button>
+      </div>
+    </div>
+    <div class="col-md-6 img-container">
+      <img src="<?php bloginfo('template_url'); ?>/img/eric-belt.jpg">
+    </div>    
+  </div>
+</div>
+<div class="parallax-home" style="margin-bottom:500px;">
+  <h2>What People Are Saying</h2>
+</div>
 
 
 
