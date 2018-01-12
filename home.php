@@ -36,6 +36,46 @@
     </div>    
   </div>
 </div>
+<div class="container-fluid training-options">
+  <h2>Training Options</h2> 
+  <div class="is-table-row">
+    <div class="col-md-6 col-md-push-6">
+      
+      <p>I’m Eric Gonzalez, a Certified Personal Trainer with 
+      
+      Teacher through the Yoga Alliance (RYT-200).
+      </p>
+      <p>I work work with individuals and teams in the NY Metro
+     
+      to fit most physical constraints.</p>
+      <p>You don’t have to be a heavyweight champion to 
+      get healthy! Contact me for a free consultation. 
+      More…</p>
+    </div>
+    <div class="col-md-6 col-md-pull-6 img-container">
+      <img src="<?php bloginfo('template_url'); ?>/img/paul-bence.jpg">
+    </div>    
+  </div>
+  <div class="is-table-row">
+    <div class="col-md-6 col-md-push-6 img-container">
+      <img src="<?php bloginfo('template_url'); ?>/img/senior-movement.jpg">
+      
+    </div>
+    <div class="col-md-6 col-md-pull-6 img-container">
+      <p>I’m Eric Gonzalez, a Certified Personal Trainer with 
+      
+      Teacher through the Yoga Alliance (RYT-200).
+      </p>
+      <p>I work work with individuals and teams in the NY Metro
+     
+      to fit most physical constraints.</p>
+      <p>You don’t have to be a heavyweight champion to 
+      get healthy! Contact me for a free consultation. 
+      More…</p>
+    
+    </div>    
+  </div>
+</div>
 <div class="parallax-home" style="margin-bottom:500px;">
   <h2>What People Are Saying</h2>
 </div>
