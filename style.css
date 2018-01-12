@@ -1,0 +1,387 @@
+/*Theme Name: Guru Fit
+Theme URI: 
+Author: E and V Design (Elie W. And Vicky K.)
+Author URI: https://eandvdesign.com
+Description: Custom made theme for Guru Fit Club
+Version: 1.0
+*/
+
+html, body {
+	color: #2a0d45;
+	font-family: 'Open Sans', sans-serif;
+}
+
+img {
+  vertical-align: bottom;
+}
+a {
+	color: #2a0d45;
+}
+a:hover {
+	color: black;
+/*	text-decoration: none;*/
+}
+
+h1, h2, h3, h4, h5 {
+	font-family: 'Lato', sans-serif;
+	color: #474747;
+}
+h1, h2, h3, h4, h5, p {
+	margin-top: 0px;
+}
+
+h2 {
+	text-align: center;
+	margin-bottom: 50px;
+}
+p {
+	margin-bottom: 20px;
+}
+
+.long-line {
+	height: 4px;
+  width: 80%;
+  background-color: #e8ebf7;
+  display: inline-block;
+  margin:25px 0px;
+}
+
+.short-line {
+	height: 2px;
+  width: 40%;
+  background-color: #e8ebf7;
+  display: inline-block;
+  margin:50px 0px 25px;
+}
+
+#main .purple {
+	background-color: #2a0d45;
+}
+
+#main .purple h2, #main .purple h4 {
+	color:#e8ebf7;
+}
+
+#main {
+	margin-bottom: 50px;
+}
+
+.menu-item {
+ 	padding-bottom: 1px;
+}
+
+.dropdown-menu {
+	margin-top: 1px;
+}
+
+.btn:focus,
+.btn:active:focus,
+.btn.active:focus,
+.btn.focus,
+.btn-default:active,
+.btn:active.focus,
+.btn.active.focus,
+.btn-default:hover {
+  outline: none;
+  outline-offset: none;
+  background-color: #e8ebf7;
+	color: #2a0d45;
+	border-color: #2a0d45;
+}
+
+.btn-default {
+	min-width: 80px;
+	margin:0px 20px;
+	background-color: #2a0d45;
+	color: #e8ebf7;
+	border-color: #e8ebf7;
+}
+
+
+input, textarea {
+	border:1px solid #ccc;
+}
+input:focus , textarea:focus {
+	outline-color: #23527c;
+
+}
+
+
+.navbar-brand {
+	font-family: 'Lato', sans-serif;
+	font-weight: bold;
+	font-size: 22px;
+/*	padding-top: 28px;*/
+	padding-bottom: 5px;
+	height: initial;
+/*	margin-left: 0px !important;*/
+	color:#3d3d3d;
+}
+
+
+
+h1.title a {
+	color: black !important;
+}
+
+h1.title a:hover {
+	opacity: .7;
+}
+.main-container {
+	margin-bottom: 50px;
+}
+
+
+/*navbar*/
+
+.navbar-default {
+	border-color: none;
+}
+
+.navbar {
+	margin-bottom: 0px;
+}
+.navbar-default .navbar-collapse {}
+
+#navbar {
+	background-color: white;
+}
+
+#navbar a {
+	color: #474747;
+}
+
+.dropdown-menu>.active>a, .dropdown-menu>.active>a:focus, .dropdown-menu>.active>a:hover {
+	background-color: #f5f5f5;
+	color:black;
+}
+@media(min-width: 767px){
+#navbar li a {
+		font-size: 14px;
+	}
+}
+@media(max-width: 767px){
+
+	#navbar li a {
+		font-size: 14px;
+	}
+	#navbar li a:hover, #navbar li a:active, #navbar li a:focus {
+		color:#23527c;
+	}
+	.navbar-brand:hover, .navbar-brand:active, .navbar-brand:focus {
+			opacity:0.7;
+	}
+}
+
+/*Home*/
+
+.letter-lg {
+ font-size: 40px;
+ font-weight: bold;
+}
+
+.letter-md {
+	font-size: 24px;
+	font-weight: bold;
+}
+
+.page-template-home .main {
+	margin-top: 50px;
+	margin-bottom: 25px;
+}
+
+.page-template-home .main p {
+	margin-bottom: 20px
+}
+
+
+.page-template-home .sections {
+	text-align: center;
+}
+
+
+.page-template-home .sections a {
+	font-size: 24px;
+	padding: 5px 20px;
+	color:#2a0d45;
+}
+
+.page-template-home #about-me {
+	background-color: #e8ebf7;
+	padding: 50px 0px;
+}
+
+.page-template-home #about-me .read-more {
+	font-style: italic;
+}
+
+.page-template-home #about-me h2 {
+	text-align: center;
+}
+
+.page-template-home .quote-well h2 {
+	margin-bottom: 10px;
+}
+
+.page-template-home .warning {
+	font-weight: bold;
+	text-align: center;
+}
+
+@media (min-width: 767px) {
+	.page-template-home .container {
+		padding-left:50px;
+		padding-right:50px;
+	}
+	.page-template-home .quote-well {
+		padding:0px 80px;
+	}
+	.page-template-home .img-well img {
+		width: 100%;
+	  height: auto;
+	}
+	.quote-container .container-fluid, .page-template-home .col-sm-6 {
+		padding-right: 0px;
+	  padding-left: 0px
+	}
+	.is-table-row {
+    display: table;
+    width: 100%;
+    margin-left:0px;
+  	margin-right: 0px;
+  }
+  .is-table-row [class*="col-"] {
+    float: none;
+    display: table-cell;
+    vertical-align: middle;
+    padding:0px 0px;
+  }
+}
+
+@media (max-width: 767px){
+	.page-template-home .quote-well {
+		padding: 15px 20px
+	}
+	.page-template-home .img-well {
+		text-align: center;
+	}
+	.page-template-home .img-well img {
+		max-width: 100%;
+	}
+	.page-template-home #about-me {
+		padding-left: 0px;
+		padding-right: 0px;
+	}
+	.page-template-home .sections .service-section {
+		display: inline-block;
+		width: 100%;
+		margin-bottom: 10px;
+	}
+	.page-template-home .divider {
+		display: none;
+	}
+}
+
+
+
+
+
+.page-template-home .quote-well h2 {
+	text-align: left;
+	font-style: italic;
+	line-height: 200%; 
+}
+
+.page-template-home .quote-well h4 {
+	text-align: right;
+	margin-bottom: 0px;
+}
+
+
+.page-template-home  #contact-div .btn-holder {
+	text-align: center;
+}
+
+/*single*/
+
+.single label{
+	display: block
+}
+
+.single textarea{
+	max-width: 100%;
+}
+
+@media (max-width: 600px){
+	.single textarea, .single input:not([type="submit"]) {
+	width: 100%;
+	}
+}
+.single input[type="submit"]{
+	  -webkit-appearance: button;
+    background-color: #fff;
+    border:1px solid #ccc;
+    display: inline-block;
+    padding: 6px 12px;
+    margin-bottom: 0;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.42857143;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    -ms-touch-action: manipulation;
+    touch-action: manipulation;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    background-image: none;
+    border-radius: 4px;
+  }
+  .single input[type="submit"]:hover{
+      color: #333;
+    background-color: #d4d4d4;
+    border-color: #8c8c8c;
+  }
+
+
+/*Category */
+
+footer {
+	padding: 20px 15px;
+	color: #273676;
+	background-color: #e8ebf7;
+}
+
+footer a {
+	color: #273676 !important;
+}
+
+footer .contact {
+	margin-bottom: 10px;
+}
+
+footer .contact-me {
+	padding:10px 10px;
+}	
+footer .contact-me:hover {
+	color: #23527c;
+}	
+
+footer .divider{ 
+	padding: 0px 10px;
+}
+@media(max-width: 767px){
+	footer .contact-me, footer .bottom-contact {
+		display: inline-block;
+		width: 100%;
+		padding: 10px;
+	}	
+	footer .contact {
+		margin-bottom: 0px;
+	}
+}
+
+
