@@ -1,6 +1,25 @@
 <?php /* Template Name: Home */ ?>
 <?php get_header(); ?>
-<div class="quote-container">
+<div class='hero'>
+    <div class="center">
+        <img src="<?php bloginfo('template_url'); ?>/img/logo-yellow.png">
+        <p>Custom fitness plans - for you and your lifestyle</p>
+    </div>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- div class="quote-container">
   <div class="container-fluid">
     <div class="row is-table-row">
       <div class="col-sm-6 col-xs-12 img-well">
@@ -75,5 +94,5 @@
   </div>
   <div class="warning">
     <?php the_field("warning"); ?> </div>
-</div>
+</div> -->
 <?php get_footer(); ?>

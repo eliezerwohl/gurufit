@@ -181,57 +181,38 @@ h1.title a:hover {
 
 /*Home*/
 
-.letter-lg {
- font-size: 40px;
- font-weight: bold;
-}
-
-.letter-md {
-	font-size: 24px;
-	font-weight: bold;
-}
 
 .page-template-home .main {
 	margin-top: 50px;
 	margin-bottom: 25px;
 }
 
-.page-template-home .main p {
-	margin-bottom: 20px
+.page-template-home .hero {
+	min-height: 100vh;
+	width: 100%;
+	background-image: url(img/home-hero.png);
+	background-repeat: no-repeat;
+	background-size: cover;
+	display: table;
 }
 
-
-.page-template-home .sections {
+.page-template-home .hero .center {
+	display: table-cell;
+	vertical-align: middle;
 	text-align: center;
+	color:white;
 }
 
-
-.page-template-home .sections a {
-	font-size: 24px;
-	padding: 5px 20px;
-	color:#2a0d45;
+.page-template-home .hero img {
+	margin-bottom: 40px;
+	max-width: 100%;
+	height: auto;
 }
 
-.page-template-home #about-me {
-	background-color: #e8ebf7;
-	padding: 50px 0px;
-}
-
-.page-template-home #about-me .read-more {
-	font-style: italic;
-}
-
-.page-template-home #about-me h2 {
-	text-align: center;
-}
-
-.page-template-home .quote-well h2 {
-	margin-bottom: 10px;
-}
-
-.page-template-home .warning {
+.page-template-home .hero p {
+	text-transform: uppercase;
+	font-size: 30px;
 	font-weight: bold;
-	text-align: center;
 }
 
 @media (min-width: 767px) {
