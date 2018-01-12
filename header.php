@@ -10,7 +10,7 @@
       <?php bloginfo('name'); ?>
     </title>
     <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous"> -->
-    <link href="https://fonts.googleapis.com/css?family=Lato|Open+Sans" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Raleway|Roboto" rel="stylesheet">
     <link
     rel='stylesheet' id='sb-font-awesome-css'  href='https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css' type='text/css' media='all' /> 
     <link rel="stylesheet" type="text/css" href="<?php bloginfo('template_url'); ?>/styles/bootstrap.min.css">
@@ -18,6 +18,9 @@
     <?php wp_head(); ?>
   </head>
   <body <?php body_class(); ?> >
+    <div class="pre-navbar">
+      <p>For more information call 971-684-5080</p>
+    </div>
     <nav id="navbar" class="navbar navbar-default">
       <div class="container-fluid">
         <!-- Brand and toggle get grouped for better mobile display -->
@@ -28,10 +31,13 @@
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand" href="<?php echo home_url(); ?>">Guru Fit Club</a>
+          <!-- <a class="navbar-brand" href="<?php echo home_url(); ?>">Guru Fit Club</a> -->
         </div>
         <!-- Collect the nav links, forms, and other content for toggling -->
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+          <ul class="nav navbar-nav">
+        <li><a href="#">Get a FREE CONSULTATION</a></li></ul>
+
           <?php
               wp_nav_menu( array(
                   'menu'              => 'primary',
