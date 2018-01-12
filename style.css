@@ -226,10 +226,29 @@ h1.title a:hover {
 	height: 400px;
 }
 
-.page-template-home .about-me .img-container{
-  text-align: center;
+.page-template-home .about-me .img-container {
+  text-align: right;
 }
 
+.page-template-home .training-options {
+	padding-left:0px;
+	padding-right:0px;
+	margin:0px;
+}
+
+.page-template-home .training-options .is-table-row {
+	background-color:#ebebeb;
+}
+.page-template-home .training-options .img-container {
+	padding-left:0px;
+	padding-right: 0px;
+}
+
+
+.page-template-home .training-options .img-container img {
+	width: 100%;
+	height:auto;
+}
 
 .page-template-home
 .parallax-home { 
@@ -252,10 +271,10 @@ h1.title a:hover {
 
 
 @media (min-width: 767px) {
-	.page-template-home .container {
+/*	.page-template-home .container {
 		padding-left:50px;
 		padding-right:50px;
-	}
+	}*/
 	.page-template-home .quote-well {
 		padding:0px 80px;
 	}
@@ -277,7 +296,7 @@ h1.title a:hover {
     float: none;
     display: table-cell;
     vertical-align: middle;
-    padding:0px 0px;
+/*    padding:0px 0px;*/
   }
 }
 
