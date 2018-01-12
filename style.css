@@ -8,12 +8,12 @@ Version: 1.0
 
 html, body {
 	color: #2a0d45;
-	font-family: 'Open Sans', sans-serif;
+	font-family: 'Roboto', sans-serif;
 }
 
-img {
+/*img {
   vertical-align: bottom;
-}
+}*/
 a {
 	color: #2a0d45;
 }
@@ -23,7 +23,7 @@ a:hover {
 }
 
 h1, h2, h3, h4, h5 {
-	font-family: 'Lato', sans-serif;
+	font-family: 'Raleway', sans-serif;
 	color: #474747;
 }
 h1, h2, h3, h4, h5, p {
@@ -32,7 +32,8 @@ h1, h2, h3, h4, h5, p {
 
 h2 {
 	text-align: center;
-	margin-bottom: 50px;
+	font-size: 40px;
+	font-weight: bold;
 }
 p {
 	margin-bottom: 20px;
@@ -58,21 +59,11 @@ p {
 	background-color: #2a0d45;
 }
 
-#main .purple h2, #main .purple h4 {
-	color:#e8ebf7;
-}
 
 #main {
 	margin-bottom: 50px;
 }
 
-.menu-item {
- 	padding-bottom: 1px;
-}
-
-.dropdown-menu {
-	margin-top: 1px;
-}
 
 .btn:focus,
 .btn:active:focus,
@@ -103,19 +94,12 @@ input, textarea {
 }
 input:focus , textarea:focus {
 	outline-color: #23527c;
-
 }
 
 
 .navbar-brand {
-	font-family: 'Lato', sans-serif;
-	font-weight: bold;
-	font-size: 22px;
-/*	padding-top: 28px;*/
-	padding-bottom: 5px;
-	height: initial;
-/*	margin-left: 0px !important;*/
-	color:#3d3d3d;
+
+
 }
 
 
@@ -131,6 +115,19 @@ h1.title a:hover {
 	margin-bottom: 50px;
 }
 
+/*pre-navbar*/
+.pre-navbar {
+	padding:5px 30px;
+}
+.pre-navbar p {
+	text-align: right;
+	margin-bottom: 0px;
+}
+
+.page-template-home   .pre-navbar {
+	background-color:#707070;
+	color: white;
+}
 
 /*navbar*/
 
@@ -143,10 +140,20 @@ h1.title a:hover {
 }
 .navbar-default .navbar-collapse {}
 
+.page-template-home #navbar {
+	background-color: #b7b7b7;
+	border-color: #b7b7b7;
+	border-radius: 0px;
+} 
+
 #navbar {
 	background-color: white;
+	border
 }
 
+.page-template-home #navbar a{
+		color:white;
+}
 #navbar a {
 	color: #474747;
 }
@@ -157,7 +164,7 @@ h1.title a:hover {
 }
 @media(min-width: 767px){
 #navbar li a {
-		font-size: 14px;
+		font-size: 16px;
 	}
 }
 @media(max-width: 767px){
@@ -175,58 +182,74 @@ h1.title a:hover {
 
 /*Home*/
 
-.letter-lg {
- font-size: 40px;
- font-weight: bold;
-}
-
-.letter-md {
-	font-size: 24px;
-	font-weight: bold;
-}
 
 .page-template-home .main {
 	margin-top: 50px;
 	margin-bottom: 25px;
 }
 
-.page-template-home .main p {
-	margin-bottom: 20px
+.page-template-home .hero {
+	height: calc(100vh - 70px);
+	width: 100%;
+	background-image: url(img/home-hero.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	display: table;
 }
 
-
-.page-template-home .sections {
+.page-template-home .hero .center {
+	display: table-cell;
+	vertical-align: middle;
 	text-align: center;
+	color:white;
 }
 
-
-.page-template-home .sections a {
-	font-size: 24px;
-	padding: 5px 20px;
-	color:#2a0d45;
+.page-template-home .hero img {
+	margin-bottom: 40px;
+	max-width: 100%;
+	height: auto;
 }
 
-.page-template-home #about-me {
-	background-color: #e8ebf7;
-	padding: 50px 0px;
-}
-
-.page-template-home #about-me .read-more {
-	font-style: italic;
-}
-
-.page-template-home #about-me h2 {
-	text-align: center;
-}
-
-.page-template-home .quote-well h2 {
-	margin-bottom: 10px;
-}
-
-.page-template-home .warning {
+.page-template-home .hero p {
+	text-transform: uppercase;
+	font-size: 30px;
 	font-weight: bold;
+}
+
+.page-template-home .about-me {
+	margin-top: 50px;
+	margin-bottom: 50px;
+}
+
+.page-template-home .about-me img {
+	width:auto;
+	height: 400px;
+}
+
+.page-template-home .about-me .img-container{
+  text-align: center;
+}
+
+
+.page-template-home
+.parallax-home { 
+    background-image: url("img/parallax-weight-lifting.png");
+    height: 150px; 
+    width: 100%;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: table;
+}
+.page-template-home
+.parallax-home h2 {
+	display: table-cell;
+	vertical-align: middle;
+	color: white;
 	text-align: center;
 }
+
 
 @media (min-width: 767px) {
 	.page-template-home .container {
@@ -351,17 +374,14 @@ h1.title a:hover {
 
 footer {
 	padding: 20px 15px;
-	color: #273676;
-	background-color: #e8ebf7;
+	color: white;
+	background-color: #b7b7b7;
 }
 
 footer a {
-	color: #273676 !important;
+	color: white !important;
 }
 
-footer .contact {
-	margin-bottom: 10px;
-}
 
 footer .contact-me {
 	padding:10px 10px;
@@ -370,11 +390,14 @@ footer .contact-me:hover {
 	color: #23527c;
 }	
 
-footer .divider{ 
-	padding: 0px 10px;
+
+footer .bottom-contact {
+	display: inline-block;
+	width: 100%;
+	padding-top: 10px;
 }
 @media(max-width: 767px){
-	footer .contact-me, footer .bottom-contact {
+	footer .contact-me {
 		display: inline-block;
 		width: 100%;
 		padding: 10px;
