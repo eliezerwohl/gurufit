@@ -11,11 +11,9 @@ html, body {
 	font-family: 'Roboto', sans-serif;
 }
 
-/*img {
-  vertical-align: bottom;
-}*/
+
 a {
-	color: #2a0d45;
+	color: #555252;
 }
 a:hover {
 	color: black;
@@ -24,7 +22,7 @@ a:hover {
 
 h1, h2, h3, h4, h5 {
 	font-family: 'Raleway', sans-serif;
-	color: #474747;
+	color: #555252;
 }
 h1, h2, h3, h4, h5, p {
 	margin-top: 0px;
@@ -32,8 +30,9 @@ h1, h2, h3, h4, h5, p {
 
 h2 {
 	text-align: center;
-	font-size: 40px;
+	font-size: 50px;
 	font-weight: bold;
+	margin-bottom: 25px;
 }
 p {
 	margin-bottom: 20px;
@@ -75,17 +74,18 @@ p {
 .btn-default:hover {
   outline: none;
   outline-offset: none;
-  background-color: #e8ebf7;
-	color: #2a0d45;
-	border-color: #2a0d45;
+  background-color: white;
+	color: #707070;
+	border-color: #707070;
 }
 
 .btn-default {
 	min-width: 80px;
 	margin:0px 20px;
-	background-color: #2a0d45;
+	background-color: #707070;
 	color: #e8ebf7;
-	border-color: #e8ebf7;
+	border-color: #707070;
+	border-radius: 0px;
 }
 
 
@@ -93,7 +93,7 @@ input, textarea {
 	border:1px solid #ccc;
 }
 input:focus , textarea:focus {
-	outline-color: #23527c;
+	outline-color: #707070;
 }
 
 
@@ -173,7 +173,7 @@ h1.title a:hover {
 		font-size: 14px;
 	}
 	#navbar li a:hover, #navbar li a:active, #navbar li a:focus {
-		color:#23527c;
+		color:#707070;
 	}
 	.navbar-brand:hover, .navbar-brand:active, .navbar-brand:focus {
 			opacity:0.7;
@@ -221,6 +221,11 @@ h1.title a:hover {
 	margin-bottom: 50px;
 }
 
+.page-template-home .about-me h2 {
+	text-align: left;
+	margin-bottom: 25px;
+}
+
 .page-template-home .about-me img {
 	width:auto;
 	height: 400px;
@@ -236,7 +241,12 @@ h1.title a:hover {
 	margin:0px;
 }
 
-.page-template-home .training-options .is-table-row {
+
+.page-template-home .training-options .training-container:not(:last-child){
+	margin-bottom: 25px;
+}
+
+.page-template-home .training-options .is-table-row .col-md-6 {
 	background-color:#ebebeb;
 }
 .page-template-home .training-options .img-container {
@@ -244,6 +254,11 @@ h1.title a:hover {
 	padding-right: 0px;
 }
 
+.page-template-home .training-options p {
+	font-size: 20px;
+	padding:10px 50px;
+	margin-bottom: 0px;
+}
 
 .page-template-home .training-options .img-container img {
 	width: 100%;
@@ -267,6 +282,22 @@ h1.title a:hover {
 	vertical-align: middle;
 	color: white;
 	text-align: center;
+}
+
+.page-template-home #qoutes {
+	padding:50px 0px;
+	background-color:#ebebeb;
+}
+
+.page-template-home #qoutes .quote {
+	text-align:left;
+	font-style: italic;
+	font-size: 26px;
+}
+
+.page-template-home #qoutes .attr {
+	text-align: right;
+	font-size: 18px;
 }
 
 
@@ -323,25 +354,37 @@ h1.title a:hover {
 		display: none;
 	}
 }
-
-
-
-
-
-.page-template-home .quote-well h2 {
-	text-align: left;
-	font-style: italic;
-	line-height: 200%; 
+.page-template-home .contact-div {
+	margin-top: 50px;
 }
 
-.page-template-home .quote-well h4 {
-	text-align: right;
-	margin-bottom: 0px;
+.page-template-home .contact-div textarea, .page-template-home .contact-div input {
+	margin-bottom: 25px;
 }
 
-
-.page-template-home  #contact-div .btn-holder {
+.page-template-home  .contact-div .btn-holder {
 	text-align: center;
+}
+
+::-webkit-input-placeholder { /* Chrome */
+  color: #707070;
+  opacity: .3;
+  font-style: italic;  
+}
+:-ms-input-placeholder { /* IE 10+ */
+  color: #707070;
+  opacity: .3;
+  font-style: italic;  
+}
+::-moz-placeholder { /* Firefox 19+ */
+  color: #707070;
+  opacity: .3;
+  font-style: italic;  
+}
+:-moz-placeholder { /* Firefox 4 - 18 */
+  color: #707070;
+  opacity: .3;
+  font-style: italic;  
 }
 
 /*single*/
@@ -406,7 +449,7 @@ footer .contact-me {
 	padding:10px 10px;
 }	
 footer .contact-me:hover {
-	color: #23527c;
+	color: #707070;
 }	
 
 

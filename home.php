@@ -36,57 +36,70 @@
     </div>    
   </div>
 </div>
+
 <div class="container-fluid training-options">
   <h2>Training Options</h2> 
-  <div class="is-table-row">
-    <div class="col-md-6 col-md-push-6">
-      
-      <p>I’m Eric Gonzalez, a Certified Personal Trainer with 
-      
-      Teacher through the Yoga Alliance (RYT-200).
-      </p>
-      <p>I work work with individuals and teams in the NY Metro
-     
-      to fit most physical constraints.</p>
-      <p>You don’t have to be a heavyweight champion to 
-      get healthy! Contact me for a free consultation. 
-      More…</p>
+  <div class="row is-table-row training-container">
+    <div class="col-md-6 col-md-push-6 text-container">
+      <p>Cheesing People Off</p>
+      <p>Indian-Giving</p>
+      <p>Cutting Ones</p>
+      <p>Doing Some Other Things</p>
     </div>
-    <div class="col-md-6 col-md-pull-6 img-container">
+    <div class="row col-md-6 col-md-pull-6 img-container">
       <img src="<?php bloginfo('template_url'); ?>/img/paul-bence.jpg">
     </div>    
   </div>
-  <div class="is-table-row">
+
+  <div class="is-table-row training-container">
     <div class="col-md-6 col-md-push-6 img-container">
       <img src="<?php bloginfo('template_url'); ?>/img/senior-movement.jpg">
-      
     </div>
-    <div class="col-md-6 col-md-pull-6 img-container">
-      <p>I’m Eric Gonzalez, a Certified Personal Trainer with 
-      
-      Teacher through the Yoga Alliance (RYT-200).
-      </p>
-      <p>I work work with individuals and teams in the NY Metro
-     
-      to fit most physical constraints.</p>
-      <p>You don’t have to be a heavyweight champion to 
-      get healthy! Contact me for a free consultation. 
-      More…</p>
-    
+    <div class="col-md-6 col-md-pull-6">
+      <p>Cracking Wise</p>
+      <p>World Domination</p>
+      <p>Sending Me a Dollar</p>
+      <p>Total Spaceship GuyTV</p> 
     </div>    
   </div>
 </div>
-<div class="parallax-home" style="margin-bottom:500px;">
+<div class="parallax-home">
   <h2>What People Are Saying</h2>
 </div>
-
-
-
-
-
-
-
-
+<div id="qoutes" class="carousel slide" data-ride="carousel">
+  <!-- Wrapper for slides -->
+  <div class="carousel-inner" role="listbox">
+     <div class="item active">
+        <div class="col-sm-8 col-sm-offset-2">
+           <p class="quote">"Eric has the background and commitment to help andyone succeed"</p>
+           <p class="attr">-Lou Morra, Co-owner and Head Coach <br> Jersey Sharks Football </p>
+        </div>
+     </div>
+     <div class="item">
+        <div class="col-sm-8 col-sm-offset-2">
+           <p class="quote">"Oh no!  SHARKS!  AHHHH!  I CAN"T SWIM!!!</p>
+           <p class="attr">David K. <BR> Assisting Hands of Livingston</p>
+        </div>
+     </div>
+  </div>
+  <!-- Controls -->
+  <a class="left carousel-control" href="#qoutes" role="button" data-slide="prev">
+  <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+  <span class="sr-only">Previous</span>
+  </a>
+  <a class="right carousel-control" href="#qoutes" role="button" data-slide="next">
+  <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+  <span class="sr-only">Next</span>
+  </a>
+</div>
+<div class="container contact-div">
+  <div class='row'>
+    <div class="col-md-10 col-md-offset-1">
+      <h2>Contact</h2>
+      <?php echo do_shortcode('[contact-form-7 id="31" title="Contact form 1"]'); ?>
+    </div>
+  </div>
+</div>
 
 
 
