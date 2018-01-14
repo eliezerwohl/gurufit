@@ -39,27 +39,26 @@
 
 <div class="container-fluid training-options">
   <h2>Training Options</h2> 
-  <div class="row is-table-row training-container">
-    <div class="col-md-6 col-md-push-6 text-container">
+  <div class="is-table-row training-container">
+    <div class="row col-md-6 img-container">
+      <img src="<?php bloginfo('template_url'); ?>/img/paul-bence.jpg">
+    </div>  
+    <div class="col-md-6 text-container">
       <p>Cheesing People Off</p>
       <p>Indian-Giving</p>
       <p>Cutting Ones</p>
       <p>Doing Some Other Things</p>
-    </div>
-    <div class="row col-md-6 col-md-pull-6 img-container">
-      <img src="<?php bloginfo('template_url'); ?>/img/paul-bence.jpg">
-    </div>    
+    </div> 
   </div>
-
   <div class="is-table-row training-container">
     <div class="col-md-6 col-md-push-6 img-container">
       <img src="<?php bloginfo('template_url'); ?>/img/senior-movement.jpg">
     </div>
-    <div class="col-md-6 col-md-pull-6">
-      <p>Cracking Wise</p>
+    <div class="col-md-6 col-md-pull-6 text-container">
+       <p>Cracking Wise</p>
       <p>World Domination</p>
       <p>Sending Me a Dollar</p>
-      <p>Total Spaceship GuyTV</p> 
+      <p>Total Spaceship GuyTV</p>
     </div>    
   </div>
 </div>
@@ -92,7 +91,7 @@
   <span class="sr-only">Next</span>
   </a>
 </div>
-<div class="container contact-div">
+<div class="container-fluid contact-div">
   <div class='row'>
     <div class="col-md-10 col-md-offset-1">
       <h2>Contact</h2>
