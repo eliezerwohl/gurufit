@@ -2,7 +2,7 @@
 <footer class="text-center">
 	<div class="contact">
 		<a class="contact-me" target="_blank" href="mailto:<?php the_field('email','option'); ?>"><i class="fa fa-envelope-o" aria-hidden="true"></i> <?php the_field("email", "option"); ?></a>
-		<a class="contact-me" target="_blank" href="tel:<?php the_field("phone", "option"); ?>"><i class="fa fa-phone" aria-hidden="true"></i>  	<?php the_field("phone", "option"); ?></a>
+		<a class="contact-me" target="_blank" href="tel:<?php the_field("phone", "option"); ?>"><i class="fa fa-phone" aria-hidden="true"></i><?php the_field("phone", "option"); ?></a>
 	</div>
 	<div>
 		<span class="bottom-contact">Copyright <?php echo date("Y"); ?> GURUFIT LLC.</span>
