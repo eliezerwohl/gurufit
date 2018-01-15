@@ -212,6 +212,11 @@ input:focus , textarea:focus {
 .page-template-home .about-me .img-container {
   text-align: right;
 }
+@media (max-width: 992px){
+	.page-template-home .about-me .img-container {
+  	text-align: center;
+	}
+}
 
 .page-template-home .training-options {
 	padding-left:0px;
@@ -220,11 +225,7 @@ input:focus , textarea:focus {
 }
 
 
-.page-template-home .training-options .training-container:not(:last-child){
-	margin-bottom: 25px;
-}
-
-.page-template-home .training-options .is-table-row .col-md-6 {
+.page-template-home .training-options .is-table-row div {
 	background-color:#ebebeb;
 }
 .page-template-home .training-options .img-container {
@@ -295,6 +296,9 @@ input:focus , textarea:focus {
     display: table-cell;
     vertical-align: middle;
   }
+  .is-table-row img {
+  	vertical-align: bottom;
+  }
 }
 
 @media (max-width: 767px){
@@ -305,7 +309,15 @@ input:focus , textarea:focus {
   }
 
   .is-table-row .img-container {
-  	display: inline;
+  	display: block;
+  }
+
+  .is-table-row .img-container img {
+  /*	display: inline;*/
+  }
+
+  .is-table-row {
+  	display: inline-block;
   }
 	.page-template-home #about-me {
 		padding-left: 0px;
@@ -318,6 +330,10 @@ input:focus , textarea:focus {
 	}
 	.page-template-home .divider {
 		display: none;
+	}
+	.page-template-home .about-me img {
+		width:100%;
+		height:auto;
 	}
 }
 .page-template-home .contact-div {
