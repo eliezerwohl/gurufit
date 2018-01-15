@@ -3,12 +3,12 @@
 <div class='hero'>
   <div class="center">
     <img src="<?php bloginfo('template_url'); ?>/img/logo-yellow.png">
-    <p>Custom fitness plans - for you and your lifestyle</p>
+    <p><?php the_field("test"); ?></p>
   </div>
 </div>
 <div class="container about-me">
   <div class="row">
-    <div class="col-md-6">
+    <div class="col-md-6 col-xs-12">
       <h2>About Me</h2>
       <p>I’m Eric Gonzalez, a Certified Personal Trainer with 
       specializations in Performance Enhancement and 
@@ -31,7 +31,7 @@
         <button class="btn btn-default">Free Consultation</button>
       </div>
     </div>
-    <div class="col-md-6 img-container">
+    <div class="col-md-6 col-xs-12 img-container">
       <img src="<?php bloginfo('template_url'); ?>/img/eric-belt.jpg">
     </div>    
   </div>
@@ -39,22 +39,22 @@
 
 <div class="container-fluid training-options">
   <h2>Training Options</h2> 
-  <div class="is-table-row training-container">
-    <div class="row col-md-6 img-container">
+  <div class="is-table-row row training-container">
+    <div class="col-sm-6 img-container">
       <img src="<?php bloginfo('template_url'); ?>/img/paul-bence.jpg">
     </div>  
-    <div class="col-md-6 text-container">
+    <div class="col-sm-6 text-container">
       <p>Cheesing People Off</p>
       <p>Indian-Giving</p>
       <p>Cutting Ones</p>
       <p>Doing Some Other Things</p>
     </div> 
   </div>
-  <div class="is-table-row training-container">
-    <div class="col-md-6 col-md-push-6 img-container">
+  <div class="is-table-row row training-container">
+    <div class="col-sm-6 col-sm-push-6 img-container">
       <img src="<?php bloginfo('template_url'); ?>/img/senior-movement.jpg">
     </div>
-    <div class="col-md-6 col-md-pull-6 text-container">
+    <div class="col-sm-6 col-sm-pull-6 text-container">
        <p>Cracking Wise</p>
       <p>World Domination</p>
       <p>Sending Me a Dollar</p>
