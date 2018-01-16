@@ -19,7 +19,7 @@
   </head>
   <body <?php body_class(); ?> >
     <div class="pre-navbar">
-      <p>For more information call 971-684-5080</p>
+      <p>For more information call <a  href="tel:<?php the_field("phone", "option"); ?>"><?php the_field("phone", "option"); ?></a></p>
     </div>
     <nav id="navbar" class="navbar navbar-default">
       <div class="container-fluid">
@@ -31,7 +31,7 @@
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
           </button>
-          <!-- <a class="navbar-brand" href="<?php echo home_url(); ?>">Guru Fit Club</a> -->
+          <a class="navbar-brand visible-xs" href="<?php echo home_url(); ?>">Guru Fit Club</a>
         </div>
         <!-- Collect the nav links, forms, and other content for toggling -->
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
