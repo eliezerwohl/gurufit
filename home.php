@@ -1,5 +1,32 @@
 <?php /* Template Name: Home */ ?>
 <?php get_header(); ?>
+<!-- Modal -->
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+      </div>
+      <div class="modal-body">
+        <div class="input-front">
+          <p class="modal-text">Please fill out the information below for your free consultation</p>
+          <div class="input-holder">
+            <input placeholder="Name">
+            <input placeholder="Telephone">
+          </div>
+        </div>
+        <div class="thank" style="display: none;">
+          <p class="modal-text">Thanks!</p>
+          <p class="text-center">I will contact you soon to schedule your free consultation</p>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button id="submit" type="button" class="btn btn-default">Send</button>
+      </div>
+    </div>
+  </div>
+</div>
+
 <div class='hero'>
   <div class="center">
     <img src="<?php bloginfo('template_url'); ?>/img/logo-yellow.png">
