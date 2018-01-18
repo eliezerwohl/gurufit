@@ -275,6 +275,54 @@ input:focus , textarea:focus {
 	text-align: right;
 	font-size: 18px;
 }
+.page-template-home #myModal .modal-content {
+  border-color: #55b0d0;
+  border-radius: 0px;
+}
+
+.page-template-home #myModal .modal-text {
+  text-align: center;
+  font-weight: bold;
+  font-size: 20px;
+  margin-bottom: 50px;
+}
+
+.page-template-home #myModal .thank .modal-text {
+  margin-bottom: 25px;
+}
+
+.page-template-home #myModal .modal-footer {
+  text-align: center;
+  border-top: none;
+}
+
+.page-template-home #myModal .input-holder {
+  display: flex;
+}
+
+.page-template-home #myModal input {
+  border-color:#55b0d0;
+  padding: 5px;
+  width: 50%;
+  margin:10px;
+}
+
+.page-template-home #myModal .btn-default {
+  background-color:#55b0d0;
+  border-color:#55b0d0;
+  color:white;
+}
+
+.page-template-home #myModal .btn-default:hover,
+.page-template-home #myModal .btn-default:active,
+.page-template-home #myModal .btn-default:focus {
+  background-color: white;
+  color: #55b0d0;
+}
+
+.page-template-home #myModal .modal-header {
+  border-bottom: none;
+}
 
 
 @media (min-width: 767px) {

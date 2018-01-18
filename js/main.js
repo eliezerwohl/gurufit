@@ -1,4 +1,11 @@
 jQuery(document).ready(function($) {
+
+  $("#submit").on("click", function(){
+
+    $(".input-front, .modal-footer").fadeOut("fast", function(){
+      $(".thank").fadeIn("fast");
+    })
+  })
 	//hover menu
 	// $('.dropdown').mouseenter(function() {
 	// 	if (window.innerWidth > 767){
