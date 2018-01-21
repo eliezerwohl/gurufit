@@ -38,7 +38,7 @@
           <ul class="nav navbar-nav">
             <li>
             <?php if (!(is_front_page())) { ?>
-              <a class="brand" href="#">
+              <a class="brand" href="<?php echo home_url(); ?>">
                 <img src="<?php bloginfo('template_url'); ?>/img/logo-yellow.png">
               </a>
             <?php } else { ?>
