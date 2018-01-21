@@ -36,8 +36,16 @@
         <!-- Collect the nav links, forms, and other content for toggling -->
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
           <ul class="nav navbar-nav">
-        <li><a href="#" data-toggle="modal" data-target="#myModal">Get a FREE CONSULTATION <i class="fa fa-envelope" aria-hidden="true"></i></a></li></ul>
-
+            <li>
+            <?php if (!(is_front_page())) { ?>
+              <a class="brand" href="#">
+                <img src="<?php bloginfo('template_url'); ?>/img/logo-yellow.png">
+              </a>
+            <?php } else { ?>
+              <a href="#" data-toggle="modal" data-target="#myModal">Get a FREE CONSULTATION <i class="fa fa-envelope" aria-hidden="true"></i></a>
+            <?php } ?>
+          </li>
+        </ul>
           <?php
               wp_nav_menu( array(
                   'menu'              => 'primary',
