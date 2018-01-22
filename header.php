@@ -18,6 +18,7 @@
     <?php wp_head(); ?>
   </head>
   <body <?php body_class(); ?> >
+    <div class="test">
     <div class="pre-navbar">
       <p>For more information call <a  href="tel:<?php the_field("phone", "option"); ?>"><?php the_field("phone", "option"); ?></a></p>
     </div>
@@ -60,5 +61,12 @@
         <!-- /.navbar-collapse -->
       </div>
       <!-- /.container-fluid -->
-    </nav>
+    </nav></div>
   <div id="main">
+    <style type="text/css">
+      
+/*      .test {float: left;
+    position: absolute;
+    width: 100%; top:0;
+  }*/
+    </style>
