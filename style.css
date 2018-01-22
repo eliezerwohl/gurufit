@@ -6,7 +6,7 @@ Description: Custom made theme for Guru Fit Club
 Version: 1.0
 */
 html, body {
-	color: #2a0d45;
+	color: #555252;
 	font-family: 'Roboto', sans-serif;
 }
 
@@ -40,7 +40,7 @@ img {
 	max-width: 100%;
 }
 
-#main {
+.page-template-home #main {
 	margin-bottom: 50px;
 }
 
@@ -434,18 +434,20 @@ input:focus , textarea:focus {
 
 /*About */
 
-.upper, .lower {
- /* height: 200vh;*/
- /* width: 100%;*/
-    background-image: url(img/upper.png);
+.test{
+
+    background-image: url(img/about-bg.jpg);
     background-repeat: no-repeat;
     background-size: cover;
 /*    display: table;*/
-    background-attachment: fixed;
-    background-position: top;
+/*    background-attachment: fixed;*/
+    background-position: top right;
 /*    transform: translate3d(0px, -0px, 100px);*/
 /*margin-bottom: 100px;*/
 }
+
+/*on mobile 
+   background-size: contain*/
 
 .lower {
   background-image: url(img/lower.png);
@@ -453,8 +455,8 @@ input:focus , textarea:focus {
 
 .about-container {
   padding: 50px;
-  padding-top: 100px;
-  padding-bottom: 100px;
+  padding-top: 150px;
+  padding-bottom: 150px;
 }
 
 .about-container p {
@@ -484,6 +486,11 @@ input:focus , textarea:focus {
 
 .bio-bottom {
   padding-bottom: 50px;
+}
+
+.carousel-container {
+  background-color:#ebebeb;
+  padding: 50px 15px;
 }
 
 /*credit https://codepen.io/mephysto/pen/ZYVKRY*/
@@ -534,6 +541,10 @@ input:focus , textarea:focus {
   width: 50px;
   opacity: 1;
   background-image: none;
+}
+
+.multi-item-carousel .carousel-control .glyphicon {
+  color:#555252;
 }
 
 footer {
