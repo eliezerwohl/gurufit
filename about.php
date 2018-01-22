@@ -1,6 +1,6 @@
 <?php /* Template Name: About */ ?>
 <?php get_header(); ?>
-<div class="test">
+<div class="page-background">
   <div class="about-container">
     <h1>About</h1>
     <p>Certified Personal Trainer</p>
