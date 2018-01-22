@@ -433,25 +433,18 @@ input:focus , textarea:focus {
 }
 
 /*About */
+.page-background {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top right;
+}
 
-.test{
-
-    background-image: url(img/about-bg.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-/*    display: table;*/
-/*    background-attachment: fixed;*/
-    background-position: top right;
-/*    transform: translate3d(0px, -0px, 100px);*/
-/*margin-bottom: 100px;*/
+.page-template-about .page-background {
+  background-image: url(img/about-bg.jpg);
 }
 
 /*on mobile 
    background-size: contain*/
-
-.lower {
-  background-image: url(img/lower.png);
-}
 
 .about-container {
   padding: 50px;
@@ -531,10 +524,14 @@ input:focus , textarea:focus {
 }
 
 .multi-item-carousel .glyphicon-chevron-left {
-  left:10px;
+  left:0px;
+  margin-left: -15px;
+  opacity: .3;
 }
 .multi-item-carousel .glyphicon-chevron-right {
-  right:10px;
+  right:0px;
+  margin-right: -15px;
+  opacity: .3;
 }
 
 .multi-item-carousel .carousel-control {
@@ -546,6 +543,12 @@ input:focus , textarea:focus {
 .multi-item-carousel .carousel-control .glyphicon {
   color:#555252;
 }
+
+/*Training Options*/
+
+
+/*First Session*/
+
 
 footer {
 	padding: 20px 15px;
