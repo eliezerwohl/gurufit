@@ -408,8 +408,8 @@ input:focus , textarea:focus {
 	text-align: center;
 }
 
-.page-template-home  .contact-div .wpcf7 .ajax-loader {
-	display: none;
+.ajax-loader {
+	display: none !important;
 }
 
 ::-webkit-input-placeholder { /* Chrome */
@@ -448,6 +448,9 @@ input:focus , textarea:focus {
   background-image: url(img/about-bg.jpg);
 }
 
+.page-template-training-options .page-background {
+  background-image: url(img/training-options-bg.jpg);
+}
 .page-template-first-session .page-background {
   background-image: url(img/first-session-bg.jpg);
 }
@@ -482,6 +485,10 @@ input:focus , textarea:focus {
   padding:20px 50px;
 }
 
+.transparent-container {
+  background:rgba(255,255,255, 0.5);
+}
+
 .page-template-contact .clear-container {
   padding-top:100px;
   padding-bottom: 100px;
@@ -495,9 +502,6 @@ input:focus , textarea:focus {
   background-color: white;
 }
 
-.white {
-  background-color: white;
-}
 
 .clear-container ul {list-style-type: square; color:#55b0d0;}
 .clear-container ul li span {color:#555252;}
@@ -566,10 +570,59 @@ input:focus , textarea:focus {
 }
 
 /*Training Options*/
+.page-template-training-options .transparent-container p {
+  margin-top: -30px;
+  color:#55b0d0;
+}
+
 
 
 /*First Session*/
 
+
+/*Contact*/
+
+.page-template-contact .white {
+  background-color: white;
+  padding: 50px 10px;
+  margin-bottom: 200px;
+}
+
+.page-template-contact .input-holder input, .page-template-contact textarea {
+  border: 1px solid #55b0d0;
+  width: 100%;
+}
+.page-template-contact .input-holder input {
+  padding: 10px;
+  margin-bottom: 60px;
+}
+.page-template-contact textarea {
+  padding: 10px;
+  height:252.5px;
+}
+.page-template-contact .submit-holder {
+  text-align: right;
+}
+.page-template-contact input[type="submit"], .btn-blue {
+  padding:6px 12px;
+  background-color: white;
+  color:#55b0d0;
+  border:1px solid #55b0d0;
+}
+.page-template-contact input[type="submit"]:focus,
+.page-template-contact input[type="submit"]:hover,
+.btn-blue:focus,
+.btn-blue:active:focus,
+.btn-blue.active:focus,
+.btn-blue.focus,
+.btn-blue:active,
+.btn-blue:active.focus,
+.btn-blue.active.focus,
+.btn-blue:hover {
+  background-color: #55b0d0;
+  color:white;
+
+}
 
 footer {
 	padding: 20px 15px;

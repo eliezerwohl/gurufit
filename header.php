@@ -63,10 +63,3 @@
       <!-- /.container-fluid -->
     </nav></div>
   <div id="main">
-    <style type="text/css">
-      
-/*      .test {float: left;
-    position: absolute;
-    width: 100%; top:0;
-  }*/
-    </style>
