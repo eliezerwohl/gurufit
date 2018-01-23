@@ -1,10 +1,38 @@
 <?php /* Template Name: Contact*/ ?>
 <?php get_header(); ?>
-<div class="col-md-6">
-Contact
-</div>
-<div class="col-md-6">
+<div class="page-background">
+  <div class="clear-container container-fluid">
+    <div class="row">
+      <div class="col-md-12">
+        <h1>Contact</h1>
+        <p>It is a long established fact that a reader will be distracted by</p>
+        <p>It is a long established fact that a reader will be distracted by </p>
 
+        <p>the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normalr</p>
+      </div>
+    </div>
+  </div>
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-md-6 col-md-offset-3 white">
+      <?php echo do_shortcode( '[contact-form-7 id="83" title="Contact Page"]' ); ?>
+    </div>
+  </div>
+</div>
+<style>
+  input, textarea{
+    width: 100%;
+  }
+  textarea {
+    padding: 10px;
+    height:252.5px;
+  }
+
+  input {
+    padding: 10px;
+    margin-bottom: 60px;
+  }
+</style>
 </div>
 
 <?php get_footer(); ?>
