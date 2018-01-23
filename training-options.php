@@ -74,11 +74,11 @@
     </div>
   </div>
   <?php }; ?>
-  <div id="myModal" class="modal">
+  <div id="myModal" class="modal super-modal">
     <!-- The Close Button -->
-    <span class="close">&times;</span>
+    <span class="close-modal">&times;</span>
     <!-- Modal Content (The Image) -->
-    <img class="modal-content" id="img01">
+    <img class="modal-content super-modal-content" id="img01">
     <!-- Modal Caption (Image Text) -->
     <!--   <div id="caption"></div> -->
   </div>
