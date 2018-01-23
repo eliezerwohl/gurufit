@@ -10,8 +10,6 @@ html, body {
 	font-family: 'Roboto', sans-serif;
   font-size: 16px;
 }
-
-
 a {
 	color: #555252;
 }
@@ -117,7 +115,7 @@ input:focus , textarea:focus {
 	background-color: #b7b7b7;
 	border-color: #b7b7b7;
 	border-radius: 0px;
-} 
+}
 
 #navbar {
 	background-color: white;
@@ -135,7 +133,7 @@ input:focus , textarea:focus {
 	color:black;
 }
 #navbar .brand {
-  padding: 5px 15px;
+  padding: 3px 15px;
 }
 #navbar .brand img {
   height:50px;
@@ -257,9 +255,9 @@ input:focus , textarea:focus {
 }
 
 .page-template-home
-.parallax-home { 
+.parallax-home {
     background-image: url("img/parallax-weight-lifting.jpg");
-    height: 150px; 
+    height: 150px;
     width: 100%;
     background-attachment: fixed;
     background-position: center;
@@ -415,22 +413,22 @@ input:focus , textarea:focus {
 ::-webkit-input-placeholder { /* Chrome */
   color: #707070;
   opacity: .3;
-  font-style: italic;  
+  font-style: italic;
 }
 :-ms-input-placeholder { /* IE 10+ */
   color: #707070;
   opacity: .3;
-  font-style: italic;  
+  font-style: italic;
 }
 ::-moz-placeholder { /* Firefox 19+ */
   color: #707070;
   opacity: .3;
-  font-style: italic;  
+  font-style: italic;
 }
 :-moz-placeholder { /* Firefox 4 - 18 */
   color: #707070;
   opacity: .3;
-  font-style: italic;  
+  font-style: italic;
 }
 
 /*About */
@@ -455,7 +453,7 @@ input:focus , textarea:focus {
   background-image: url(img/first-session-bg.jpg);
 }
 
-/*on mobile 
+/*on mobile
    background-size: contain*/
 
 .about-container {
@@ -579,7 +577,7 @@ input:focus , textarea:focus {
     display: none; /* Hidden by default */
     position: fixed; /* Stay in place */
     z-index: 400; /* Sit on top */
-    padding-top: 100px;  Location of the box 
+    padding-top: 100px;  Location of the box
     left: 0;
     top: 0;
     width: 100%; /* Full width */
@@ -597,12 +595,12 @@ input:focus , textarea:focus {
     }
 
     /* Add Animation - Zoom in the Modal */
-    .super-modal-content, { 
+    .super-modal-content, {
     animation-name: zoom;
     animation-duration: 0.6s;
     }
     @keyframes zoom {
-    from {transform:scale(0)} 
+    from {transform:scale(0)}
     to {transform:scale(1)}
     }
     /* The Close Button */
@@ -688,10 +686,10 @@ footer a {
 
 footer .contact-me {
 	padding:10px 10px;
-}	
+}
 footer .contact-me:hover {
 	color: #707070;
-}	
+}
 
 
 footer .bottom-contact {
@@ -704,10 +702,8 @@ footer .bottom-contact {
 		display: inline-block;
 		width: 100%;
 		padding: 10px;
-	}	
+	}
 	footer .contact {
 		margin-bottom: 0px;
 	}
 }
-
-

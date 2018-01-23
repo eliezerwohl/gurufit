@@ -13,7 +13,7 @@
           <li><span>Hello<br>more text</span></li>
           <li><span>Hello <br>more text</span></li>
         </ul>
-        <button>Free Consultation</button>
+        <button class="btn-blue">Free Consultation</button>
       </div>
     </div>
   </div>
