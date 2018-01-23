@@ -12,39 +12,36 @@
   <div class="transparent-container container-fluid">
     <div class="row">
       <div class="col-md-8 col-md-offset-2 text-center">
-        <div class="col-md-3">
-          <img src="<?php bloginfo('template_url'); ?>/img/icon-yoga.png">
-          <p>Fitness</p>
+      <?php if( have_rows( 'training_options') ){ ?>
+  
+            <?php $counter = 0; while ( have_rows( 'training_options') ) { the_row(); $counter++; ?> 
+              <div class="col-md-3">
+                <a href="#" data-toggle="modal" data-target=".modal-<?php echo $counter; ?>">
+                 <?php $image=get_sub_field( 'img'); ?>
+          <img class="" src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>" title="<?php echo $image['title']; ?>">
+          <p><?php the_sub_field("txt"); ?></p></a>
         </div>
-        <div class="col-md-3">
-          <img src="<?php bloginfo('template_url'); ?>/img/icon-yoga.png">
-          <p>Fitness</p>
-        </div>
-        <div class="col-md-3">
-          <img src="<?php bloginfo('template_url'); ?>/img/icon-yoga.png">
-          <p>Fitness</p>
-        </div>
-        <div class="col-md-3">
-          <img src="<?php bloginfo('template_url'); ?>/img/icon-yoga.png">
-          <p>Fitness</p>
-        </div>
-        <div class="col-md-3">
-          <img src="<?php bloginfo('template_url'); ?>/img/icon-yoga.png">
-          <p>Fitness</p>
-        </div>
-        <div class="col-md-3">
-          <img src="<?php bloginfo('template_url'); ?>/img/icon-yoga.png">
-          <p>Fitness</p>
-        </div>
-        <div class="col-md-3">
-          <img src="<?php bloginfo('template_url'); ?>/img/icon-yoga.png">
-          <p>Fitness</p>
-        </div>
-        <div class="col-md-3">
-          <img src="<?php bloginfo('template_url'); ?>/img/icon-yoga.png">
-          <p>Fitness</p>
-        </div>
+
+<div class="modal fade modal-<?php echo $counter; ?>" tabindex="-1" role="dialog">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
       </div>
+      <div class="modal-body">
+        <h4><?php the_sub_field("txt"); ?></h4>
+        <p><?php the_sub_field("modal_txt"); ?><p>
+      </div>
+    </div><!-- /.modal-content -->
+  </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
+             
+      
+    
+            <?php  } ?>
+         </div>
+  <?php }; ?>
+       
     </div>
   </div>
   <br> <br><br> <br><br> <br><br> <br>
@@ -85,67 +82,6 @@
     <!-- Modal Caption (Image Text) -->
     <!--   <div id="caption"></div> -->
   </div>
-  <style type="text/css">
-    #myImg {
-    border-radius: 5px;
-    cursor: pointer;
-    transition: 0.3s;
-    }
-    #myImg:hover {opacity: 0.7;}
-    /* The Modal (background) */
-    .modal {
-    display: none; /* Hidden by default */
-    position: fixed; /* Stay in place */
-    z-index: 400; /* Sit on top */
-    /*padding-top: 100px;  Location of the box */
-    left: 0;
-    top: 0;
-    width: 100%; /* Full width */
-    height: 100%; /* Full height */
-    overflow: auto; /* Enable scroll if needed */
-    background-color: rgb(0,0,0); /* Fallback color */
-    background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
-    }
-    /* Modal Content (Image) */
-    .modal-content {
-    margin: auto;
-    display: block;
-    width: 80%;
-    max-width: 700px;
-    }
-
-    /* Add Animation - Zoom in the Modal */
-    .modal-content, #caption { 
-    animation-name: zoom;
-    animation-duration: 0.6s;
-    }
-    @keyframes zoom {
-    from {transform:scale(0)} 
-    to {transform:scale(1)}
-    }
-    /* The Close Button */
-    .close {
-    position: absolute;
-    top: 15px;
-    right: 35px;
-    color: #f1f1f1;
-    font-size: 40px;
-    font-weight: bold;
-    transition: 0.3s;
-    }
-    .close:hover,
-    .close:focus {
-    color: #bbb;
-    text-decoration: none;
-    cursor: pointer;
-    }
-    /* 100% Image Width on Smaller Screens */
-    @media only screen and (max-width: 700px){
-    .modal-content {
-    width: 100%;
-    }
-    }
-  </style>
 </div>
 
 
