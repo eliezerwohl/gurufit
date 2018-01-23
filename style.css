@@ -8,6 +8,7 @@ Version: 1.0
 html, body {
 	color: #555252;
 	font-family: 'Roboto', sans-serif;
+  font-size: 16px;
 }
 
 
@@ -443,6 +444,10 @@ input:focus , textarea:focus {
   background-image: url(img/about-bg.jpg);
 }
 
+.page-template-first-session .page-background {
+  background-image: url(img/first-session-bg.jpg);
+}
+
 /*on mobile 
    background-size: contain*/
 
@@ -462,24 +467,23 @@ input:focus , textarea:focus {
   color:#55b0d0;
 }
 
+.white-container h2, .clear-container h1 {
+  font-weight: bold;
+  color:#55b0d0;
+  text-align: left;
+  font-size: 50px;
+}
 
-.bio {
-  padding-right: 50px;
-  padding-left:50px;
+.white-container, .clear-container {
+  padding:20px 50px;
+}
+
+.white-container {
   background-color: white;
 }
 
-.bio p {
-  margin-bottom:0px;
-  padding-bottom: 20px;
-}
-.bio-top {
-  padding-top: 50px;
-}
-
-.bio-bottom {
-  padding-bottom: 50px;
-}
+.clear-container ul {list-style-type: square; color:#55b0d0;}
+.clear-container ul li span {color:#555252;}
 
 .carousel-container {
   background-color:#ebebeb;
