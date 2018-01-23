@@ -440,6 +440,10 @@ input:focus , textarea:focus {
   background-position: top right;
 }
 
+.page-template-contact .page-background {
+  background-image: url(img/contact-bg.jpg);
+   background-position: bottom right;
+}
 .page-template-about .page-background {
   background-image: url(img/about-bg.jpg);
 }
@@ -478,7 +482,20 @@ input:focus , textarea:focus {
   padding:20px 50px;
 }
 
+.page-template-contact .clear-container {
+  padding-top:100px;
+  padding-bottom: 100px;
+}
+
+.page-template-contact .clear-container h1 {
+  margin-bottom: 50px;
+}
+
 .white-container {
+  background-color: white;
+}
+
+.white {
   background-color: white;
 }
 
