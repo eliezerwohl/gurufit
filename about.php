@@ -2,7 +2,7 @@
 <?php get_header(); ?>
 <div class="page-background">
   <div class="about-container">
-    <h1>About</h1>
+    <h1 class="animated slideInLeft">About</h1>
     <?php while ( have_rows( 'about_section') ) { the_row(); ?>
       <p><?php the_sub_field("txt"); ?></p>
     <?php }; ?>

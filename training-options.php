@@ -2,9 +2,9 @@
 <?php get_header(); ?>
 <div class="page-background">
   <div class="clear-container container-fluid">
-    <div class="row">
+    <!-- <div class="row"> <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css"> -->
       <div class="col-md-12">
-        <h1>Training Options</h1>
+        <h1 class="animated slideInLeft">Training Options</h1>
         <p><?php the_field("main"); ?></p>
       </div>
     </div>
@@ -15,7 +15,7 @@
       <?php if( have_rows( 'training_options') ){ ?>
       <?php $counter = 0; while ( have_rows( 'training_options') ) { the_row(); $counter++; $rowCounter++; ?>
         <?php if ($rowCounter == 1 ){ echo "<div class='row'>"; } ?>
-        <div class="col-md-3">
+        <div class="col-md-3 content-container">
           <a href="#" data-toggle="modal" data-target=".modal-<?php echo $counter; ?>">
           <?php $image=get_sub_field( 'img'); ?>
             <img class="" src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>" title="<?php echo $image['title']; ?>">
@@ -29,8 +29,8 @@
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
               </div>
               <div class="modal-body">
-                <h4><?php the_sub_field("txt"); ?></h4>
-                <p><?php the_sub_field("modal_txt"); ?><p>
+                <h4><?php echo strip_tags(get_sub_field("txt")); ?><div class="blue-line"></div></h4>
+                <p><?php echo strip_tags(get_sub_field("modal_txt")); ?><p>
               </div>
             </div><!-- /.modal-content -->
           </div><!-- /.modal-dialog -->
@@ -58,7 +58,7 @@
           <div class="carousel-inner">
             <?php while ( have_rows( 'image_gallery') ) { the_row(); ?>
             <div class="item <?php if ($first){ echo 'active';  $first = false; } ?>">
-              <?php $image=get_sub_field( 'img'); ?>
+              <?php $image=get_sub_field('img'); ?>
               <div class="col-xs-4"><a href="#1"><img class="img-pop img-responsive" src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>" title="<?php echo $image['title']; ?>"></a></div>
             </div>
             <?php  } ?>
