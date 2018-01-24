@@ -140,7 +140,12 @@ input:focus , textarea:focus {
 }
 #navbar .brand img {
   height:50px;
-
+}
+@media(max-width: 767px){
+	#navbar .brand img {
+		height:100%;
+		width:auto;
+	}
 }
 
 .navbar-nav>li>a {
@@ -340,6 +345,59 @@ input:focus , textarea:focus {
   border-bottom: none;
 }
 
+.super-modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 400; /* Sit on top */
+    padding-top: 100px;  Location of the box
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+    }
+    /* Modal Content (Image) */
+    .super-modal-content {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+    }
+
+    /* Add Animation - Zoom in the Modal */
+    .super-modal-content, {
+    animation-name: zoom;
+    animation-duration: 0.6s;
+    }
+    @keyframes zoom {
+    from {transform:scale(0)}
+    to {transform:scale(1)}
+    }
+    /* The Close Button */
+    .close-modal {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+    }
+    .close-modal:hover,
+    .close-modal:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+    }
+    /* 100% Image Width on Smaller Screens */
+    @media only screen and (max-width: 700px){
+    .super-modal-content {
+    width: 100%;
+    }
+  }
+
 
 @media (min-width: 767px) {
 	.quote-container .container-fluid, .page-template-home .col-sm-6 {
@@ -440,6 +498,15 @@ input:focus , textarea:focus {
   background-size: cover;
   background-position: top right;
 }
+@media(max-width:767px){
+	.page-background{background-size:contain; width: 100%;}
+	.padding {
+		display: none;
+	}
+	.transparent-container {
+		background-color: white;
+	}
+}
 
 .page-template-contact .page-background {
   background-image: url(img/contact-bg.jpg);
@@ -448,11 +515,14 @@ input:focus , textarea:focus {
 .page-template-about .page-background {
   background-image: url(img/about-bg.jpg);
 }
-
-.page-template-about .white-container {
-	margin-bottom: 200px;
+.padding {
+	height: 200px;
+	width: 100%;
 }
 
+/* .page-template-about .white-container {
+
+} */
 .page-template-training-options .page-background {
   background-image: url(img/training-options-bg.jpg);
 }
@@ -460,8 +530,6 @@ input:focus , textarea:focus {
   background-image: url(img/first-session-bg.jpg);
 }
 
-/*on mobile
-   background-size: contain*/
 
 .about-container {
   padding: 50px;
@@ -489,9 +557,10 @@ input:focus , textarea:focus {
 .white-container, .clear-container {
   padding:20px 50px;
 }
-
-.transparent-container {
-  background:rgba(255,255,255, 0.5);
+@media(min-width:767px){
+	.transparent-container {
+	  background:rgba(255,255,255, 0.5);
+	}
 }
 
 
@@ -516,6 +585,8 @@ input:focus , textarea:focus {
   background-color:#ebebeb;
   padding: 50px 15px;
 }
+
+
 
 /*credit https://codepen.io/mephysto/pen/ZYVKRY*/
 .multi-item-carousel img {
@@ -613,11 +684,22 @@ input:focus , textarea:focus {
 .page-template-training-options .transparent-container {
 	padding-top: 50px;
 	padding-bottom: 50px;
-	margin-bottom: 200px;
 }
 .page-template-training-options .transparent-container  .content-container p {
   margin-top: -10px;
   color:#55b0d0;
+}
+
+@media (max-width:992px) {
+	.page-template-training-options .content-container img {
+		max-width: 200px;
+	}
+}
+
+@media (max-width:992px) and (min-width:500px) {
+	.page-template-training-options .transparent-container .col-xs-12 {
+		width: 50%;
+	}
 }
 
 

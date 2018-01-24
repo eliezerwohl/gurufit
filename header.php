@@ -12,7 +12,7 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Raleway|Roboto" rel="stylesheet">
     <link
-    rel='stylesheet' id='sb-font-awesome-css'  href='https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css' type='text/css' media='all' /> 
+    rel='stylesheet' id='sb-font-awesome-css'  href='https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css' type='text/css' media='all' />
 <!--     <link rel="stylesheet" type="text/css" href="<?php bloginfo('template_url'); ?>/styles/bootstrap.min.css"> -->
     <link rel="stylesheet" type="text/css" href="<?php bloginfo('template_url'); ?>/style.css">
     <?php wp_head(); ?>
@@ -32,17 +32,20 @@
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand visible-xs" href="<?php echo home_url(); ?>">Guru Fit Club</a>
+          <?php if (is_front_page()) { ?>
+            <a class="navbar-brand visible-xs" href="<?php echo home_url(); ?>">Guru Fit Club</a>
+          <?php } else { ?>
+            <a class="navbar-brand brand" href="<?php echo home_url(); ?>">
+              <img src="<?php bloginfo('template_url'); ?>/img/logo-yellow.png">
+            </a>
+          <?php } ?>
         </div>
         <!-- Collect the nav links, forms, and other content for toggling -->
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
           <ul class="nav navbar-nav">
             <li>
-            <?php if (!(is_front_page())) { ?>
-              <a class="brand" href="<?php echo home_url(); ?>">
-                <img src="<?php bloginfo('template_url'); ?>/img/logo-yellow.png">
-              </a>
-            <?php } else { ?>
+            <?php if (is_front_page()) { ?>
+
               <a href="#" data-toggle="modal" data-target="#myModal">Get a FREE CONSULTATION <i class="fa fa-envelope" aria-hidden="true"></i></a>
             <?php } ?>
           </li>
@@ -56,7 +59,7 @@
                   'fallback_cb'       => 'WP_Bootstrap_Navwalker::fallback',
                   'walker'            => new WP_Bootstrap_Navwalker())
               );
-            ?> 
+            ?>
         </div>
         <!-- /.navbar-collapse -->
       </div>

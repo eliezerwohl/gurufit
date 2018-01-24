@@ -15,7 +15,7 @@
       <?php if( have_rows( 'training_options') ){ ?>
       <?php $counter = 0; while ( have_rows( 'training_options') ) { the_row(); $counter++; $rowCounter++; ?>
         <?php if ($rowCounter == 1 ){ echo "<div class='row'>"; } ?>
-        <div class="col-md-3 content-container">
+        <div class="col-md-3 col-sm-6 col-xs-12 content-container">
           <a href="#" data-toggle="modal" data-target=".modal-<?php echo $counter; ?>">
           <?php $image=get_sub_field( 'img'); ?>
             <img class="" src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>" title="<?php echo $image['title']; ?>">
@@ -40,9 +40,9 @@
       <?php }; ?>
     </div>
   </div>
-  <br>
+  <div class="padding"></div>
 </div>
-<div class="white-container container-fluid">
+<div class="container-fluid">
   <div class="row">
     <div class="col-md-12">
       <h4>Questions? Call me!</h4>
@@ -59,7 +59,7 @@
             <?php while ( have_rows( 'image_gallery') ) { the_row(); ?>
             <div class="item <?php if ($first){ echo 'active';  $first = false; } ?>">
               <?php $image=get_sub_field('img'); ?>
-              <div class="col-xs-4"><img class="img-pop img-responsive" src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>" title="<?php echo $image['title']; ?>"></div>
+              <div class="col-xs-4"><a href="#1"><img class="img-pop img-responsive" src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>" title="<?php echo $image['title']; ?>"></a></div>
             </div>
             <?php  } ?>
           </div>
@@ -70,6 +70,14 @@
     </div>
   </div>
   <?php }; ?>
+  <div id="myModal" class="modal super-modal">
+    <!-- The Close Button -->
+    <span class="close-modal">&times;</span>
+    <!-- Modal Content (The Image) -->
+    <img class="modal-content super-modal-content" id="img01">
+    <!-- Modal Caption (Image Text) -->
+    <!--   <div id="caption"></div> -->
+  </div>
 
 </div>
 
