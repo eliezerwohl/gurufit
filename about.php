@@ -13,7 +13,8 @@
       <button class="btn-blue">Contact Me</button>
     </div>
   </div>
-  <br>
+  <div class="padding"></div>
+</div>
   <?php if( have_rows( 'image_gallery') ){ ?>
   <?php $first = true;?>
   <div class="container-fluid carousel-container">
@@ -24,7 +25,7 @@
             <?php while ( have_rows( 'image_gallery') ) { the_row(); ?>
             <div class="item <?php if ($first){ echo 'active';  $first = false; } ?>">
               <?php $image=get_sub_field('img'); ?>
-              <div class="col-xs-4"><img class="img-pop img-responsive" src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>" title="<?php echo $image['title']; ?>"></div>
+              <div class="col-xs-4"><a href="#1"><img class="img-pop img-responsive" src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>" title="<?php echo $image['title']; ?>"></a></div>
             </div>
             <?php  } ?>
           </div>
@@ -35,5 +36,14 @@
     </div>
   </div>
   <?php }; ?>
+  <div id="myModal" class="modal super-modal">
+    <!-- The Close Button -->
+    <span class="close-modal">&times;</span>
+    <!-- Modal Content (The Image) -->
+    <img class="modal-content super-modal-content" id="img01">
+    <!-- Modal Caption (Image Text) -->
+    <!--   <div id="caption"></div> -->
+  </div>
 </div>
+
 <?php get_footer(); ?>
