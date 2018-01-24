@@ -6,7 +6,7 @@
 	</div>
 	<div>
 		<span class="bottom-contact">Copyright <?php echo date("Y"); ?> GURUFIT LLC</span>
-		<span class="bottom-contact">Website by <a target="_blank" href="https://www.eandvdesign.com">E and V Design</a></span> 
+		<span class="bottom-contact">Website by <a target="_blank" href="https://www.eandvdesign.com">E and V Design</a></span>
 	</div>
 	<?php wp_footer(); ?>
 	</footer>
@@ -15,6 +15,5 @@
 	<script type="text/javascript" src="<?php bloginfo('template_url'); ?>/js/main.js"></script>
   <script type="text/javascript" src="<?php bloginfo('template_url'); ?>/js/parallax.js"></script>
   <script type="text/javascript" src="<?php bloginfo('template_url'); ?>/js/carousel.js"></script>
-   <script type="text/javascript" src="<?php bloginfo('template_url'); ?>/js/modal.js"></script>
 </body>
 </html>
