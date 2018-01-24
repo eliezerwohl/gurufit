@@ -2,7 +2,7 @@
 <?php get_header(); ?>
 <div class="page-background">
   <div class="clear-container container-fluid">
-    <!-- <div class="row"> <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css"> -->
+    <div class="row">
       <div class="col-md-12">
         <h1 class="animated slideInLeft">Training Options</h1>
         <p><?php the_field("main"); ?></p>
@@ -40,7 +40,7 @@
       <?php }; ?>
     </div>
   </div>
-  <br> <br><br> <br><br> <br><br> <br>
+  <br>
 </div>
 <div class="white-container container-fluid">
   <div class="row">
@@ -59,7 +59,7 @@
             <?php while ( have_rows( 'image_gallery') ) { the_row(); ?>
             <div class="item <?php if ($first){ echo 'active';  $first = false; } ?>">
               <?php $image=get_sub_field('img'); ?>
-              <div class="col-xs-4"><a href="#1"><img class="img-pop img-responsive" src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>" title="<?php echo $image['title']; ?>"></a></div>
+              <div class="col-xs-4"><img class="img-pop img-responsive" src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>" title="<?php echo $image['title']; ?>"></div>
             </div>
             <?php  } ?>
           </div>
@@ -70,14 +70,7 @@
     </div>
   </div>
   <?php }; ?>
-  <div id="myModal" class="modal super-modal">
-    <!-- The Close Button -->
-    <span class="close-modal">&times;</span>
-    <!-- Modal Content (The Image) -->
-    <img class="modal-content super-modal-content" id="img01">
-    <!-- Modal Caption (Image Text) -->
-    <!--   <div id="caption"></div> -->
-  </div>
+
 </div>
 
 
