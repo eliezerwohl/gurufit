@@ -34,9 +34,9 @@
   </div>
 </div>
 <div class="container about-me">
+  <h2>About Me</h2>
   <div class="row">
     <div class="col-md-6 col-xs-12">
-      <h2>About Me</h2>
       <?php if( have_rows( 'about_me_text') ){ ?>
         <?php $counter = 0; $rowCount=count( get_field( 'about_me_text' ) ); ?>
         <?php while ( have_rows( 'about_me_text') ) { the_row(); $counter++ ?>
