@@ -18,6 +18,11 @@ a:hover {
 /*	text-decoration: none;*/
 }
 
+a:focus {
+    outline: none;
+
+}
+
 h1, h2, h3, h4, h5 {
 	font-family: 'Raleway', sans-serif;
 	color: #555252;
@@ -158,7 +163,7 @@ input:focus , textarea:focus {
 	color:black;
 }
 #navbar .brand {
-  padding: 3px 15px;
+  padding: 4px 15px;
 }
 #navbar .brand img {
   height:50px;
@@ -233,6 +238,11 @@ input:focus , textarea:focus {
 	font-size: 30px;
 	font-weight: bold;
 }
+
+.page-template-home .contact-div .col-sm-6 {
+		padding-left: 15px;
+		padding-right: 15px;
+}
 @media (max-width:767px) {
 	.pre-navbar p {
 		font-size: 12px;
@@ -268,7 +278,7 @@ input:focus , textarea:focus {
 		font-size: 16px !important;
 	}
 	.page-template-home .carousel-control {
-		width: 5%;
+		width: 10%;
 	}
 	.page-template-home .carousel .item {
 		padding-left: 15px;
@@ -683,8 +693,16 @@ input:focus , textarea:focus {
 }
 
 
-.clear-container ul {list-style-type: square; color:#55b0d0;}
-.clear-container ul li span {color:#555252;}
+.bullet-list {list-style-type: square; color:#55b0d0;}
+.bullet-list li span {color:#555252;}
+
+.page-template-training-services .bullet-list li {
+	margin-top:20px;
+}
+.page-template-training-services .tel {
+	color:#55b0d0;
+}
+
 
 .carousel-container {
   background-color:#ebebeb;
@@ -744,6 +762,17 @@ input:focus , textarea:focus {
   opacity: .3;
 }
 
+@media(max-width:767px){
+	.multi-item-carousel .glyphicon-chevron-left {
+	  left:0px;
+	  margin-left: -5px;
+	  opacity: .3;
+	}
+	.multi-item-carousel .glyphicon-chevron-right {
+	  margin-right: -5px;
+	}
+}
+
 .multi-item-carousel .carousel-control {
   width: 50px;
   opacity: 1;
@@ -772,9 +801,27 @@ input:focus , textarea:focus {
 	color: #55b0d0;
 	margin-bottom: 0px;
 }
-.page-template-training-services .modal-body h4, .page-template-training-services .modal-body p {
+.page-template-training-services .modal-body h3, .page-template-training-services .modal-body p {
 	text-align: left;
 	color:black;
+}
+
+.page-template-training-services .modal-body h3 {
+	margin-bottom: 20px;
+}
+
+.page-template-training-services .modal-body p {
+	font-size: 14px;
+	margin-bottom: 0px;
+}
+
+.page-template-training-services .modal .modal-content .modal-body {
+	padding:0px 30px 30px;
+}
+
+.page-template-training-services .modal .modal-content .modal-header {
+	padding:5px 10px;
+	border-bottom: none;
 }
 .blue-line {
 	height:3px;
@@ -787,8 +834,8 @@ input:focus , textarea:focus {
 	padding-bottom: 50px;
 }
 .page-template-training-services .transparent-container {
-	padding-top: 50px;
-	padding-bottom: 50px;
+	padding-top: 75px;
+	padding-bottom: 75px;
 }
 
 .page-template-about .white-container {
@@ -796,8 +843,18 @@ input:focus , textarea:focus {
 	padding-bottom: 50px;
 }
 .page-template-training-services .transparent-container  .content-container p {
-  margin-top: -10px;
+  /* margin-top: -10px; */
   color:#55b0d0;
+	font-size: 14px;
+	line-height: 1.5 !important;
+}
+
+.page-template-training-services .transparent-container  .training-row {
+	margin-bottom: 25px;
+}
+
+.page-template-training-services .content-container img {
+	height:150px;
 }
 
 @media (max-width:992px) {
@@ -824,13 +881,18 @@ input:focus , textarea:focus {
   margin-bottom: 200px;
 }
 
-.page-template-contact .input-holder input, .page-template-contact textarea {
+.page-template-contact .input-holder input {
   border: 1px solid #55b0d0;
-  width: 100%;
+  width: 50%;
+}
+
+.page-template-contact textarea {
+	width: 100%;
+	border: 1px solid #55b0d0;
 }
 .page-template-contact .input-holder input {
   padding: 10px;
-  margin-bottom: 60px;
+  margin-bottom: 20px;
 }
 .page-template-contact textarea {
   padding: 10px;
