@@ -200,6 +200,12 @@ input:focus , textarea:focus {
 	}
 }
 
+@media (min-width: 768px){
+	.navbar-right-right {
+		margin-right: 0px !important;
+	}
+}
+
 /*Home*/
 
 
@@ -252,7 +258,7 @@ input:focus , textarea:focus {
 		font-size: 16px;
 	}
 	h1, h2 {
-		font-size: 30px;
+		font-size: 30px !important;
 	}
 	.page-template-home .hero img {
 		padding: 20px;
@@ -638,6 +644,7 @@ input:focus , textarea:focus {
 .page-template-training-services .page-background {
   background-image: url(img/training-options-bg.jpg);
 }
+
 .page-template-first-session .page-background {
   background-image: url(img/first-session-bg.jpg);
 }
@@ -678,6 +685,7 @@ input:focus , textarea:focus {
 }
 
 
+
 .page-template-contact .clear-container {
   padding-top:100px;
   padding-bottom: 100px;
@@ -690,6 +698,13 @@ input:focus , textarea:focus {
 .white-container {
   /* background-color: white; */
 	background: rgba(255,255,255, 0.8);
+}
+
+@media(max-width:767px){
+	.white-container, .clear-container, .transparent-container {
+	  padding:20px 15px;
+		 background-color:white;
+	}
 }
 
 
@@ -707,6 +722,15 @@ input:focus , textarea:focus {
 .carousel-container {
   background-color:#ebebeb;
   padding: 50px 15px;
+}
+
+@media(max-width:767px){
+	.page-template-training-services .page-background,
+	.page-template-contact .page-background,
+	.page-template-first-session .page-background {
+	  background-image:none;
+		background-color: white;
+	}
 }
 
 
@@ -785,8 +809,8 @@ input:focus , textarea:focus {
 
 /*Training Options*/
 .page-template-training-services h1 {
-	padding-top: 50px;
-	padding-bottom: 50px;
+	margin-bottom: 50px;
+	margin-top: 50px;
 }
 
 .page-template-training-services #main p {
@@ -836,6 +860,26 @@ input:focus , textarea:focus {
 .page-template-training-services .transparent-container {
 	padding-top: 75px;
 	padding-bottom: 75px;
+}
+
+.page-template-first-session h1 {
+	margin:50px 0px;
+}
+
+@media(max-width:767px){
+	.page-template-training-services .transparent-container {
+		padding-top: 25px;
+		padding-bottom: 25px;
+	}
+	.page-template-training-services h4 {
+		padding-top: 25px;
+		padding-bottom: 25px;
+	}
+	.page-template-first-session h1,
+	.page-template-training-services h1 {
+		margin-top: 25px;
+		margin-bottom: 25px;
+	}
 }
 
 .page-template-about .white-container {

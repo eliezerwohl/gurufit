@@ -27,7 +27,7 @@
       </div>
     </div>
   </div>
-  <br> <br><br> <br><br> <br><br> <br>
+  <div class="padding"></div>
 </div>
 <div class="white-container container-fluid">
   <div class="row">

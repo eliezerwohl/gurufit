@@ -50,16 +50,27 @@
             <?php } ?>
           </li>
         </ul>
+        <ul  class="nav navbar-nav navbar-right">
+          <li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-22">
+            <a href="http://localhost/gurufit/about/"><i class="fa fa-instagram" aria-hidden="true"></i>
+            </a>
+          </li>
+          <li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-22">
+            <a href="http://localhost/gurufit/about/"><i class="fa fa-linkedin" aria-hidden="true"></i>
+            </a>
+          </li>
+        </ul>
           <?php
               wp_nav_menu( array(
                   'menu'              => 'primary',
                   'theme_location'    => 'primary',
                   'depth'             => 2,
-                  'menu_class'        => ' nav navbar-nav  navbar-right',
+                  'menu_class'        => ' nav navbar-nav  navbar-right navbar-right-right',
                   'fallback_cb'       => 'WP_Bootstrap_Navwalker::fallback',
                   'walker'            => new WP_Bootstrap_Navwalker())
               );
             ?>
+
         </div>
         <!-- /.navbar-collapse -->
       </div>
