@@ -33,7 +33,7 @@
           <span class="icon-bar"></span>
           </button>
           <?php if (is_front_page()) { ?>
-            <a class="navbar-brand visible-xs" href="<?php echo home_url(); ?>">Guru Fit Club</a>
+            <!-- <a class="navbar-brand visible-xs" href="<?php echo home_url(); ?>">Guru Fit Club</a> -->
           <?php } else { ?>
             <a class="navbar-brand brand" href="<?php echo home_url(); ?>">
               <img src="<?php bloginfo('template_url'); ?>/img/logo-yellow.png">

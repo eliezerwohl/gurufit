@@ -4,7 +4,7 @@
   <div class="clear-container container-fluid">
     <div class="row">
       <div class="col-md-12">
-        <h1 class="animated slideInLeft">Training Options</h1>
+        <h1 class="animated slideInLeft">Training Services</h1>
         <p><?php the_field("main"); ?></p>
       </div>
     </div>
