@@ -14,7 +14,7 @@ a {
 	color: #555252;
 }
 a:hover {
-	color: black;
+	color: #555252;
 /*	text-decoration: none;*/
 }
 
@@ -88,6 +88,7 @@ input:focus , textarea:focus {
 /*pre-navbar*/
 .pre-navbar {
 	padding:5px 30px;
+	font-size: 14px;
 }
 
 .pre-navbar a {
@@ -125,12 +126,33 @@ input:focus , textarea:focus {
 	border
 }
 
-.page-template-home #navbar a{
-		color:white;
-}
+
 #navbar a {
 	color: #474747;
 }
+
+#navbar a:hover {
+	color:#55b0d0;
+}
+
+.navbar-default .navbar-nav > .active > a,
+.navbar-default .navbar-nav > .active > a:hover,
+.navbar-default .navbar-nav > .active > a:focus {
+	color:#55b0d0 !important;
+	background-color: #ebebeb;
+}
+
+
+.page-template-home #navbar a{
+	color:white;
+}
+.page-template-home #navbar a:hover {
+	color:white;
+	font-weight: bold;
+	opacity:.7;
+}
+
+
 .dropdown-menu>.active>a, .dropdown-menu>.active>a:focus, .dropdown-menu>.active>a:hover {
 	background-color: #f5f5f5;
 	color:black;
@@ -211,10 +233,66 @@ input:focus , textarea:focus {
 	font-size: 30px;
 	font-weight: bold;
 }
+@media (max-width:767px) {
+	.pre-navbar p {
+		font-size: 12px;
+		text-align: center;
+	}
+	.page-template-home .hero p {
+		font-size: 16px;
+	}
+	h1, h2 {
+		font-size: 30px;
+	}
+	.page-template-home .hero img {
+		padding: 20px;
+	}
+	body, html, #main {
+		font-size: 14px;
+	}
+	.page-template-home .training-options .sub {
+		font-size: 14px !important;
+	}
+	.page-template-home .training-options .is-table-row div {
+		text-align: center;
+	}
+	.page-template-home .training-options p {
+		font-size: 16px !important;
+		padding:10px;
+	}
+	.page-template-home .training-options .text-container {
+		padding-top: 15px;
+		padding-bottom: 15px;
+	}
+	.page-template-home #qoutes .quote {
+		font-size: 16px !important;
+	}
+	.page-template-home .carousel-control {
+		width: 5%;
+	}
+	.page-template-home .carousel .item {
+		padding-left: 15px;
+		padding-right: 15px;
+	}
+	footer {
+		font-size: 12px;
+	}
+	footer .contact-me, footer .bottom-contact {
+		padding:5px 10px !important;
+	}
+}
 
 .page-template-home .about-me {
 	margin-top: 50px;
 	margin-bottom: 50px;
+	padding-left: 50px;
+	padding-right: 50px;
+}
+@media(max-width:767px){
+	.page-template-home .about-me {
+	padding-left: 15px;
+	padding-right: 15px;
+	}
 }
 
 .page-template-home .about-me h2 {
@@ -241,6 +319,17 @@ input:focus , textarea:focus {
 	padding-right:0px;
 	margin:0px;
 }
+
+.page-template-home .training-options h2 {
+	margin-bottom: 0px;
+}
+
+.page-template-home .training-options .sub {
+	margin-bottom: 25px;
+	font-size: 16px;
+}
+
+
 
 
 .page-template-home .training-options .is-table-row div {
@@ -289,12 +378,12 @@ input:focus , textarea:focus {
 .page-template-home #qoutes .quote {
 	text-align:left;
 	font-style: italic;
-	font-size: 26px;
+	font-size: 20px;
 }
 
 .page-template-home #qoutes .attr {
 	text-align: right;
-	font-size: 18px;
+	margin-bottom: 0px;
 }
 .page-template-home #myModal .modal-content {
   border-color: #55b0d0;
@@ -503,6 +592,10 @@ input:focus , textarea:focus {
 	.padding {
 		display: none;
 	}
+	.about-container {
+		padding-top: 100px !important;
+		padding-bottom: 100px !important;
+	}
 	.transparent-container {
 		background-color: white;
 	}
@@ -515,6 +608,15 @@ input:focus , textarea:focus {
 .page-template-about .page-background {
   background-image: url(img/about-bg.jpg);
 }
+
+.page-template-about .white-container {
+	padding-top: 50px;
+	padding-bottom: 50px;
+}
+
+.page-template-about .white-container .btn-blue {
+	margin-top: 25px;
+}
 .padding {
 	height: 200px;
 	width: 100%;
@@ -523,7 +625,7 @@ input:focus , textarea:focus {
 /* .page-template-about .white-container {
 
 } */
-.page-template-training-options .page-background {
+.page-template-training-services .page-background {
   background-image: url(img/training-options-bg.jpg);
 }
 .page-template-first-session .page-background {
@@ -537,8 +639,10 @@ input:focus , textarea:focus {
   padding-bottom: 150px;
 }
 
+
 .about-container p {
   margin-bottom: 5px;
+	font-weight: 500;
 }
 
 .about-container h1 {
@@ -574,7 +678,8 @@ input:focus , textarea:focus {
 }
 
 .white-container {
-  background-color: white;
+  /* background-color: white; */
+	background: rgba(255,255,255, 0.8);
 }
 
 
@@ -650,16 +755,16 @@ input:focus , textarea:focus {
 }
 
 /*Training Options*/
-.page-template-training-options h1 {
+.page-template-training-services h1 {
 	padding-top: 50px;
 	padding-bottom: 50px;
 }
 
-.page-template-training-options #main p {
+.page-template-training-services #main p {
 	line-height: 2.0;
 }
 
-.page-template-training-options h4 {
+.page-template-training-services h4 {
 	text-align: center;
 	font-weight: bold;
 	padding:50px 10px;
@@ -667,7 +772,7 @@ input:focus , textarea:focus {
 	color: #55b0d0;
 	margin-bottom: 0px;
 }
-.page-template-training-options .modal-body h4, .page-template-training-options .modal-body p {
+.page-template-training-services .modal-body h4, .page-template-training-services .modal-body p {
 	text-align: left;
 	color:black;
 }
@@ -678,26 +783,31 @@ input:focus , textarea:focus {
 	background-color: #55b0d0;
 }
 
-.page-template-training-options .clear-container {
+.page-template-training-services .clear-container {
 	padding-bottom: 50px;
 }
-.page-template-training-options .transparent-container {
+.page-template-training-services .transparent-container {
 	padding-top: 50px;
 	padding-bottom: 50px;
 }
-.page-template-training-options .transparent-container  .content-container p {
+
+.page-template-about .white-container {
+	padding-top: 50px;
+	padding-bottom: 50px;
+}
+.page-template-training-services .transparent-container  .content-container p {
   margin-top: -10px;
   color:#55b0d0;
 }
 
 @media (max-width:992px) {
-	.page-template-training-options .content-container img {
+	.page-template-training-services .content-container img {
 		max-width: 200px;
 	}
 }
 
 @media (max-width:992px) and (min-width:500px) {
-	.page-template-training-options .transparent-container .col-xs-12 {
+	.page-template-training-services .transparent-container .col-xs-12 {
 		width: 50%;
 	}
 }

@@ -39,36 +39,40 @@
       <h2>About Me</h2>
       <?php if( have_rows( 'about_me_text') ){ ?>
         <?php $counter = 0; $rowCount=count( get_field( 'about_me_text' ) ); ?>
-        <?php while ( have_rows( 'about_me_text') ) { the_row(); $counter++ ?> 
+        <?php while ( have_rows( 'about_me_text') ) { the_row(); $counter++ ?>
         <p><?php the_sub_field('txt'); ?>
-        <?php if($counter == $rowCount){
-          echo "<span class='more'>more...</span>";
-        } ?>  
+        <?php if($counter == $rowCount){ ?>
+          <span class='more'><a href='<?php echo home_url(); ?>/contact'>Read more...</a></span>
+        <?php } ?>
         </p>
         <?php  } ?>
-      <?php }; ?> 
+      <?php }; ?>
       <div class="btn-holder text-center">
-        <button class="btn btn-default">Free Consultation</button>
+        <a class="btn btn-default" href="#" data-toggle="modal" data-target="#myModal">Free Consultation</a>
       </div>
     </div>
     <div class="col-md-6 col-xs-12 img-container">
       <img src="<?php bloginfo('template_url'); ?>/img/eric-belt.jpg">
-    </div>    
+    </div>
   </div>
 </div>
 <?php if( have_rows( 'training_options') ){ ?>
 <div class="container-fluid training-options">
-  <h2>Training Options</h2> 
+  <h2>Training Services</h2>
+  <div class="col-md-10 col-md-offset-1">
+    <p class="text-center sub"><?php the_field("training_services_tagline"); ?></p>
+  </div>
   <?php $counter = 0; $rowCount=count( get_field( 'training_options' ) ); ?>
-  <?php while ( have_rows( 'training_options') ) { the_row(); $counter++ ?> 
+  <?php while ( have_rows( 'training_options') ) { the_row(); $counter++ ?>
   <div class="is-table-row row training-container">
     <div class="col-sm-6 <?php if(!($counter % 2)){ echo 'col-sm-push-6'; } ?> img-container">
       <?php $image=get_sub_field( 'img'); ?>
       <img src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>" title="<?php echo $image['title']; ?>">
-    </div>  
+    </div>
     <div class="col-sm-6 <?php if(!($counter % 2)){ echo 'col-sm-pull-6'; } ?> text-container">
+      <!--center-->
       <?php the_sub_field("txt"); ($counter % 2); ?>
-    </div> 
+    </div>
   </div>
   <?php  } ?>
 </div>
@@ -87,7 +91,7 @@
         <p class="quote"><?php the_sub_field('quote_text'); ?></p>
         <p class="attr"><?php the_sub_field('quote_attr'); ?></p>
       </div>
-    </div> 
+    </div>
     <?php  } ?>
   </div>
   <!-- Controls -->
@@ -100,10 +104,10 @@
   <span class="sr-only">Next</span>
   </a>
 </div>
-<?php }; ?> 
+<?php }; ?>
 <div class="container-fluid contact-div">
   <div class='row'>
-    <div class="col-md-10 col-md-offset-1">
+    <div class="col-md-8 col-md-offset-2">
       <h2>Contact</h2>
       <?php echo do_shortcode('[contact-form-7 id="31" title="Contact form 1"]'); ?>
     </div>
