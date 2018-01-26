@@ -188,7 +188,6 @@ input:focus , textarea:focus {
 	}
 }
 @media(max-width: 767px){
-
 	#navbar li a {
 		font-size: 14px;
 	}
@@ -200,11 +199,7 @@ input:focus , textarea:focus {
 	}
 }
 
-@media (min-width: 768px){
-	.navbar-right-right {
-		margin-right: 0px !important;
-	}
-}
+
 
 /*Home*/
 
@@ -702,7 +697,7 @@ input:focus , textarea:focus {
 
 @media(max-width:767px){
 	.white-container, .clear-container, .transparent-container {
-	  padding:20px 15px;
+	  padding:0px 15px;
 		 background-color:white;
 	}
 }
@@ -864,6 +859,25 @@ input:focus , textarea:focus {
 
 .page-template-first-session h1 {
 	margin:50px 0px;
+}
+
+.page-template-first-session .bullet-list li {
+	margin-bottom: 25px;
+}
+
+.page-template-first-session .forms {
+	margin:50px 0px;
+}
+.page-template-first-session .first-session .btn-blue {
+	margin-bottom: 50px;
+}
+
+.page-template-first-session h2 {
+	margin:50px 0px;
+}
+
+.page-template-first-session .testimonials {
+	margin-bottom: 50px;
 }
 
 @media(max-width:767px){
