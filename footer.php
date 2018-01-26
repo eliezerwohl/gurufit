@@ -10,7 +10,6 @@
 	</div>
 	<?php wp_footer(); ?>
 	</footer>
-
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 	<script type="text/javascript" src="<?php bloginfo('template_url'); ?>/js/main.js"></script>
   <script type="text/javascript" src="<?php bloginfo('template_url'); ?>/js/parallax.js"></script>
