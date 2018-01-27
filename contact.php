@@ -26,19 +26,20 @@
     <div class="row">
       <div class="col-md-12">
         <h1 class="animated slideInLeft">Contact</h1>
-        <p>It is a long established fact that a reader will be distracted by</p>
-        <p>It is a long established fact that a reader will be distracted by </p>
-        <p>the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normalr</p>
-      </div>
+        <p style="margin-bottom:0px"><span class="bold">Email:</span>eric@gurufit.com</p>
+        <p><span class="bold">Telephone:</span>971-684-5080</p>
+        <p>I travel within the Central New Jersey and NYC metro area, with my own equipment, to make your sessions more convenient for you either at your home or workplace. For general questions please use the form below.</p>
     </div>
   </div>
-  <div class="container-fluid">
+</div>
+  <div class="container-fluid white ">
     <div class="row">
-      <div class="col-md-6 col-md-offset-3 white">
+      <div class="col-md-6 col-md-offset-3 ">
         <?php echo do_shortcode( '[contact-form-7 id="83" title="Contact Page"]' ); ?>
       </div>
     </div>
   </div>
+  <div class="padding"></div>
 </div>
 
 <?php get_footer(); ?>

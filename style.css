@@ -710,13 +710,13 @@ input:focus, textarea:focus {
 
 @media(min-width:767px) {
   .transparent-container {
-    background: rgba(255, 255, 255, 0.5);
+    background: rgba(255, 255, 255, 0.8);
   }
 }
 
 .page-template-contact .clear-container {
   padding-top: 100px;
-  padding-bottom: 100px;
+  padding-bottom: 50px;
 }
 
 .page-template-contact .clear-container h1 {
@@ -934,6 +934,7 @@ input:focus, textarea:focus {
 
 .page-template-first-session .testimonials .attr {
   text-align: right;
+  margin-bottom: 50px;
 }
 
 @media(max-width:767px) {
@@ -987,15 +988,19 @@ input:focus, textarea:focus {
 
 /*Contact*/
 
+/* .page-template-contact .clear-container {
+  margin-bottom: 50px;
+}  */
+.white {
+  background: rgba(255, 255, 255, 0.6);
+}
 .page-template-contact .white {
-  background-color: white;
-  padding: 50px 10px;
-  margin-bottom: 200px;
+  padding: 75px 15px;
 }
 
 .page-template-contact .input-holder input {
   border: 1px solid #55b0d0;
-  width: 50%;
+  width: 100%;
 }
 
 .page-template-contact textarea {
@@ -1004,7 +1009,7 @@ input:focus, textarea:focus {
 }
 
 .page-template-contact .input-holder input {
-  padding: 10px;
+  padding: 5px;
   margin-bottom: 20px;
 }
 
@@ -1014,7 +1019,7 @@ input:focus, textarea:focus {
 }
 
 .page-template-contact .submit-holder {
-  text-align: right;
+  margin-top:25px;
 }
 
 .page-template-contact input[type="submit"], .btn-blue {
