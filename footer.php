@@ -15,5 +15,29 @@
   <script type="text/javascript" src="<?php bloginfo('template_url'); ?>/js/parallax.js"></script>
 	<script type="text/javascript" src="<?php bloginfo('template_url'); ?>/js/carousel.js"></script>
 	<script type="text/javascript" src="<?php bloginfo('template_url'); ?>/js/modal.js"></script>
+
+	<?php if ( (get_field("active", "option") ) && (is_front_page()) ) { ?>
+		<div id="specialModal" class="modal fade" tabindex="-1" role="dialog">
+	  <div class="modal-dialog" role="document">
+	    <div class="modal-content">
+
+	      <div class="modal-body">
+					<div class="inner row">
+						<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+
+						<div class="col-md-10 col-md-offset-1">
+
+		        <h3>New Years Bash!</h3>
+						<p class='sub'>Revive your life!  BE YOUNG FOREVER!</p>
+						  <?php echo do_shortcode( '[contact-form-7 id="142" title="Special"]' ); ?>
+
+					</div></div>
+	      </div>
+
+	    </div><!-- /.modal-content -->
+	  </div><!-- /.modal-dialog -->
+	</div><!-- /.modal -->
+		<script type="text/javascript" src="<?php bloginfo('template_url'); ?>/js/special.js"></script>
+	<?php } ?>
 </body>
 </html>
