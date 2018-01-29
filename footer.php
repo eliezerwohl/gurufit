@@ -15,5 +15,6 @@
   <script type="text/javascript" src="<?php bloginfo('template_url'); ?>/js/parallax.js"></script>
 	<script type="text/javascript" src="<?php bloginfo('template_url'); ?>/js/carousel.js"></script>
 	<script type="text/javascript" src="<?php bloginfo('template_url'); ?>/js/modal.js"></script>
+	<script type="text/javascript" src="<?php bloginfo('template_url'); ?>/js/personal.js"></script>
 </body>
 </html>
