@@ -1074,6 +1074,45 @@ input:focus, textarea:focus {
   animation-name: slideInLeft;
 }
 
+#specialModal .modal-body {
+  background-color: #55b0d0;
+  padding-top: 15px;
+}
+#specialModal .modal-body h3 {
+  margin-top: 25px;
+  font-weight: bold;
+  color: #55b0d0;
+  font-size: 30px;
+  margin-bottom: 25px;
+}
+
+#specialModal .modal-body .sub {
+  margin-bottom: 25px;
+  font-size: 24px;
+}
+
+#specialModal .row {
+  margin-left: 0px;
+  margin-right: 0px;
+}
+#specialModal .inner {
+  background-color: white;
+  padding: 15px;
+}
+#specialModal .inner input {
+  padding: 5px;
+  border: 1px solid #55b0d0;
+  margin-bottom: 25px;
+}
+
+#specialModal .page-template-home input[type="submit"] {
+  padding: 6px 12px;;
+}
+
+#specialModal .inner h3, #specialModal .inner p {
+  text-align: center;
+}
+
 footer {
   padding: 20px 15px;
   color: white;
