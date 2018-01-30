@@ -78,6 +78,19 @@ img {
   border-radius: 0px;
 }
 
+.page-template-contact input[type="submit"], .btn-blue {
+  padding: 6px 12px !important;
+  background-color: white;
+  color: #55b0d0;
+  border: 1px solid #55b0d0;
+  text-decoration: none !important;
+  line-height: inherit !important;
+  height: auto !important;
+  width: auto !important;
+  font-size: 16px !important;
+}
+
+
 input, textarea {
   border: 1px solid #ccc;
 }
@@ -88,6 +101,13 @@ input:focus, textarea:focus {
 
 .more {
   font-style: italic;
+}
+
+.blue-line {
+  height: 3px;
+  width: 35px;
+  width: 3ch;
+  background-color: #55b0d0;
 }
 
 .main-container {
@@ -174,12 +194,7 @@ input:focus, textarea:focus {
   height: 50px;
 }
 
-@media(max-width: 767px) {
-  #navbar .brand img {
-    height: 100%;
-    width: auto;
-  }
-}
+
 
 .navbar-nav>li>a {
   padding: 20px 15px;
@@ -187,24 +202,6 @@ input:focus, textarea:focus {
 
 .page-template-home .navbar-nav>li>a {
   padding: 15px;
-}
-
-@media(min-width: 767px) {
-  #navbar li a {
-    font-size: 16px;
-  }
-}
-
-@media(max-width: 767px) {
-  #navbar li a {
-    font-size: 14px;
-  }
-  #navbar li a:hover, #navbar li a:active, #navbar li a:focus {
-    color: #707070;
-  }
-  .navbar-brand:hover, .navbar-brand:active, .navbar-brand:focus {
-    opacity: 0.7;
-  }
 }
 
 /*Home*/
@@ -251,67 +248,12 @@ input:focus, textarea:focus {
   padding-right: 15px;
 }
 
-@media (max-width:767px) {
-  .pre-navbar p {
-    font-size: 12px;
-    text-align: center;
-  }
-  .page-template-home .hero p {
-    font-size: 16px;
-  }
-  h1, h2 {
-    font-size: 30px !important;
-  }
-  .page-template-home .hero img {
-    padding: 20px;
-  }
-  body, html, #main {
-    font-size: 14px;
-  }
-  .page-template-home .training-options .sub {
-    font-size: 14px !important;
-  }
-  .page-template-home .training-options .is-table-row div {
-    text-align: center;
-  }
-  .page-template-home .training-options p {
-    font-size: 16px !important;
-    padding: 10px;
-  }
-  .page-template-home .training-options .text-container {
-    padding-top: 15px;
-    padding-bottom: 15px;
-  }
-  .page-template-home #qoutes .quote {
-    font-size: 16px !important;
-  }
-  .page-template-home .carousel-control {
-    width: 10%;
-  }
-  .page-template-home .carousel .item {
-    padding-left: 15px;
-    padding-right: 15px;
-  }
-  footer {
-    font-size: 12px;
-  }
-  footer .contact-me, footer .bottom-contact {
-    padding: 5px 10px !important;
-  }
-}
 
 .page-template-home .about-me {
   margin-top: 50px;
   margin-bottom: 50px;
   padding-left: 50px;
   padding-right: 50px;
-}
-
-@media(max-width:767px) {
-  .page-template-home .about-me {
-    padding-left: 15px;
-    padding-right: 15px;
-  }
 }
 
 .page-template-home .about-me h2 {
@@ -326,12 +268,6 @@ input:focus, textarea:focus {
 
 .page-template-home .about-me .img-container {
   text-align: right;
-}
-
-@media (max-width: 992px) {
-  .page-template-home .about-me .img-container {
-    text-align: center;
-  }
 }
 
 .page-template-home .training-options {
@@ -435,16 +371,7 @@ input:focus, textarea:focus {
   margin: 10px;
 }
 
-@media(max-width:767px){
-  #freeModal .input-holder {
-    display: block;
-  }
-  #freeModal input {
-    width: 100%;
-    margin-left:0px;
-    margin-right: 0px;
-  }
-}
+
 
 #freeModal .btn-default {
   background-color: #55b0d0;
@@ -528,66 +455,6 @@ input:focus, textarea:focus {
 
 /* 100% Image Width on Smaller Screens */
 
-@media only screen and (max-width: 700px) {
-  .super-modal-content {
-    width: 100%;
-  }
-}
-
-@media (min-width: 767px) {
-  .quote-container .container-fluid, .page-template-home .col-sm-6 {
-    padding-right: 0px;
-    padding-left: 0px
-  }
-  .is-table-row {
-    display: table;
-    width: 100%;
-    margin-left: 0px;
-    margin-right: 0px;
-  }
-  .is-table-row [class*="col-"] {
-    float: none;
-    display: table-cell;
-    vertical-align: middle;
-  }
-  .is-table-row img {
-    vertical-align: bottom;
-  }
-}
-
-@media (max-width: 767px) {
-  .is-table-row {
-    width: 100%;
-    margin-left: 0px;
-    margin-right: 0px;
-  }
-  .is-table-row .img-container {
-    display: block;
-  }
-  .is-table-row .img-container img {
-    /*	display: inline;*/
-  }
-  .is-table-row {
-    display: inline-block;
-  }
-  .page-template-home #about-me {
-    padding-left: 0px;
-    padding-right: 0px;
-  }
-  .page-template-home .sections .service-section {
-    display: inline-block;
-    width: 100%;
-    margin-bottom: 10px;
-  }
-  .page-template-home .divider {
-    display: none;
-  }
-  .page-template-home .about-me img {
-    width: 100%;
-    height: auto;
-  }
-}
-
 .page-template-home .contact-div {
   margin-top: 50px;
 }
@@ -638,23 +505,6 @@ input:focus, textarea:focus {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: top right;
-}
-
-@media(max-width:767px) {
-  .page-background {
-    background-size: contain;
-    width: 100%;
-  }
-  .padding {
-    display: none;
-  }
-  .about-container {
-    padding-top: 100px !important;
-    padding-bottom: 100px !important;
-  }
-  .transparent-container {
-    background-color: white;
-  }
 }
 
 .page-template-contact .page-background {
@@ -720,11 +570,6 @@ input:focus, textarea:focus {
   padding: 20px 50px;
 }
 
-@media(min-width:767px) {
-  .transparent-container {
-    background: rgba(255, 255, 255, 0.8);
-  }
-}
 
 .page-template-contact .clear-container {
   padding-top: 100px;
@@ -740,13 +585,6 @@ input:focus, textarea:focus {
   background: rgba(255, 255, 255, 0.8);
 }
 
-@media(max-width:767px) {
-  .white-container, .clear-container, .transparent-container {
-    padding: 0px 15px;
-    background-color: white;
-  }
-}
-
 .bullet-list {
   list-style-type: square;
   color: #55b0d0;
@@ -754,6 +592,9 @@ input:focus, textarea:focus {
 
 .bullet-list li span {
   color: #555252;
+}
+.page-template-first-session .bullet-list {
+  padding-bottom: 5px !important;
 }
 
 .page-template-training-services .bullet-list li {
@@ -767,13 +608,6 @@ input:focus, textarea:focus {
 .carousel-container {
   background-color: #ebebeb;
   padding: 50px 15px;
-}
-
-@media(max-width:767px) {
-  .page-template-training-services .page-background, .page-template-contact .page-background, .page-template-first-session .page-background {
-    background-image: none;
-    background-color: white;
-  }
 }
 
 /*credit https://codepen.io/mephysto/pen/ZYVKRY*/
@@ -835,17 +669,6 @@ input:focus, textarea:focus {
   opacity: .3;
 }
 
-@media(max-width:767px) {
-  .multi-item-carousel .glyphicon-chevron-left {
-    left: 0px;
-    margin-left: -5px;
-    opacity: .3;
-  }
-  .multi-item-carousel .glyphicon-chevron-right {
-    margin-right: -5px;
-  }
-}
-
 .multi-item-carousel .carousel-control {
   width: 50px;
   opacity: 1;
@@ -876,6 +699,13 @@ input:focus, textarea:focus {
   margin-bottom: 0px;
 }
 
+@media(max-width:767px){
+  .page-template-training-services h4 {
+    font-size: 24px;
+    padding: 0px 10px 25px !important;
+  }
+}
+
 .page-template-training-services .modal-body h3, .page-template-training-services .modal-body p {
   text-align: left;
   color: black;
@@ -899,15 +729,19 @@ input:focus, textarea:focus {
   border-bottom: none;
 }
 
-.blue-line {
-  height: 3px;
-  width: 35px;
-  width: 3ch;
-  background-color: #55b0d0;
-}
 
 .page-template-training-services .clear-container {
   padding-bottom: 50px;
+}
+
+@media(max-width:767px){
+  .page-template-training-services .clear-container {
+    padding-bottom: 10px;
+  }
+  .multi-item-carousel .col-xs-4 {
+    padding-left: 5px;
+    padding-right: 5px;
+  }
 }
 
 .page-template-training-services .transparent-container {
@@ -930,11 +764,7 @@ input:focus, textarea:focus {
 .page-template-first-session .clear-container {
   padding-bottom: 70px;
 }
-@media(max-width:767px){
-  .page-template-first-session .clear-container {
-    padding-bottom: 50px;
-  }
-}
+
 .page-template-first-session .first-session .btn-blue {
   margin-bottom: 50px;
 }
@@ -952,7 +782,6 @@ input:focus, textarea:focus {
   width: 100%;
   margin-bottom: 20px;
 }
-
 .section:not(:first-of-type){
   display: none;
 }
@@ -987,74 +816,7 @@ input:focus, textarea:focus {
 }
 
 
-@media(max-width:767px) {
-  .page-template-training-services .transparent-container {
-    padding-top: 25px;
-    padding-bottom: 25px;
-  }
-  .page-template-training-services h4 {
-    padding-top: 25px;
-    padding-bottom: 25px;
-  }
-  .page-template-first-session h1, .page-template-training-services h1 {
-    padding-top: 25px;
-    padding-bottom: 25px;
-  }
-  .page-template-training-services h1 {
-    background-image: url(img/training-options-mobile.jpg);
-    background-size: cover;
-    background-position: bottom right;
-    background-repeat: no-repeat;
-    margin-bottom: 0px;
-    margin-left: -15px;
-    margin-right: -15px;
-    padding-left: 15px;
-    padding-right:15px;
-    margin-top: 0px;
-    margin-bottom: 25px;
-  }
 
-  .page-template-contact h1 {
-    background-image: url(img/contact-mobile.jpg);
-    background-size: cover;
-    background-position: bottom right;
-    background-repeat: no-repeat;
-    margin-bottom: 0px;
-    margin-left: -15px;
-    margin-right: -15px;
-    padding-left: 15px;
-    padding-right:15px;
-    margin-top: 0px;
-    margin-bottom: 25px !important;
-    padding-top: 25px;
-    padding-bottom: 25px;
-  }
-
-  .page-template-contact .clear-container {
-    padding-top: 0px;
-    padding-bottom: 0px;
-  }
-
-  .page-template-contact .white {
-    padding-top: 15px !important;
-    padding-bottom: 50px !important;
-  }
-  .page-template-first-session h1, .page-template-first-session h2 {
-    background-image: url(img/first-session-mobile.jpg);
-    background-size: cover;
-    background-position: bottom;
-    background-repeat: no-repeat;
-    margin-bottom: 0px;
-    margin-left: -15px;
-    margin-right: -15px;
-    padding-left: 15px;
-    padding-right:15px;
-    margin-top: 0px;
-    padding-top: 25px;
-    padding-bottom: 25px;
-    margin-bottom: 25px;
-  }
-}
 
 .page-template-about .white-container {
   padding-top: 50px;
@@ -1068,25 +830,24 @@ input:focus, textarea:focus {
   line-height: 1.5 !important;
 }
 
-.page-template-training-services .transparent-container .training-row {
-  margin-bottom: 25px;
+.page-template-training-services .transparent-container .training-row .content-container {
+  margin-bottom: 50px;
+}
+
+@media (max-width:767px) {
+  .page-template-training-services .transparent-container .training-row .content-container {
+    margin-bottom: 25px;
+  }
+  .page-template-training-services .content-container img {
+    height: 125px !important;
+  }
+
 }
 
 .page-template-training-services .content-container img {
   height: 150px;
 }
 
-@media (max-width:992px) {
-  .page-template-training-services .content-container img {
-    max-width: 200px;
-  }
-}
-
-@media (max-width:992px) and (min-width:500px) {
-  .page-template-training-services .transparent-container .col-xs-12 {
-    width: 50%;
-  }
-}
 
 /*First Session*/
 
@@ -1096,7 +857,7 @@ input:focus, textarea:focus {
   margin-bottom: 50px;
 }  */
 .white {
-  background: rgba(255, 255, 255, 0.6);
+  background: rgba(255, 255, 255, 0.8);
 }
 .page-template-contact .white {
   padding: 75px 15px;
@@ -1126,13 +887,6 @@ input:focus, textarea:focus {
   margin-top:25px;
 }
 
-.page-template-contact input[type="submit"], .btn-blue {
-  padding: 6px 12px !important;
-  background-color: white;
-  color: #55b0d0;
-  border: 1px solid #55b0d0;
-  text-decoration: none !important;
-}
 
 .page-template-contact input[type="submit"]:focus, .page-template-contact input[type="submit"]:hover, .btn-blue:focus, .btn-blue:active:focus, .btn-blue.active:focus, .btn-blue.focus, .btn-blue:active, .btn-blue:active.focus, .btn-blue.active.focus, .btn-blue:hover {
   background-color: #55b0d0;
@@ -1195,6 +949,24 @@ input:focus, textarea:focus {
   margin-bottom: 25px;
   font-size: 24px;
 }
+@media(max-width:992px){
+  .page-template-home .about-me .btn-default {
+    margin-bottom: 40px;
+  }
+}
+
+@media(max-width:767px){
+  #specialModal .close {
+    padding-left:15px;
+    padding-bottom: 15px;
+  }
+  #specialModal .modal-body h3 {
+    font-size: 24px;
+  }
+  #specialModal .modal-body .sub {
+    font-size: 16px;
+  }
+}
 
 #specialModal .row {
   margin-left: 0px;
@@ -1242,6 +1014,8 @@ footer .bottom-contact {
   padding-top: 10px;
 }
 
+/* media query */
+
 @media(max-width: 767px) {
   footer .contact-me {
     display: inline-block;
@@ -1250,5 +1024,274 @@ footer .bottom-contact {
   }
   footer .contact {
     margin-bottom: 0px;
+  }
+}
+
+
+
+
+
+
+
+
+
+@media only screen and (max-width: 700px) {
+  .super-modal-content {
+    width: 100%;
+  }
+}
+
+
+
+@media(min-width:767px) {
+  .quote-container .container-fluid, .page-template-home .col-sm-6 {
+    padding-right: 0px;
+    padding-left: 0px
+  }
+  .is-table-row {
+    display: table;
+    width: 100%;
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+  .is-table-row [class*="col-"] {
+    float: none;
+    display: table-cell;
+    vertical-align: middle;
+  }
+  .is-table-row img {
+    vertical-align: bottom;
+  }
+  .transparent-container {
+    background: rgba(255, 255, 255, 0.8);
+  }
+}
+
+@media (max-width:400px) {
+  .page-template-first-session .forms .btn-blue {
+    float: left;
+    clear:both;
+    margin-bottom: 15px;
+
+  }
+}
+
+@media(max-width:767px) {
+  #navbar .brand img {
+    height: 100%;
+    width: auto;
+  }
+  #navbar li a {
+    font-size: 14px;
+  }
+  #navbar li a:hover, #navbar li a:active, #navbar li a:focus {
+    color: #55b0d0;
+  }
+  .navbar-brand:hover, .navbar-brand:active, .navbar-brand:focus {
+    opacity: 0.7;
+  }
+  .pre-navbar p {
+    font-size: 12px;
+    text-align: center;
+  }
+  .page-template-home .hero p {
+    font-size: 16px;
+  }
+  h1, h2 {
+    font-size: 30px !important;
+  }
+  .page-template-home .hero img {
+    padding: 20px;
+  }
+  body, html, #main {
+    font-size: 14px;
+  }
+  .page-template-home .training-options .sub {
+    font-size: 14px !important;
+  }
+  .page-template-home .training-options .is-table-row div {
+    text-align: center;
+  }
+  .page-template-home .training-options p {
+    font-size: 16px !important;
+    padding: 10px;
+  }
+  .page-template-home .training-options .text-container {
+    padding-top: 15px;
+    padding-bottom: 15px;
+  }
+
+  /* .page-template-first-session .forms .btn-blue:first-of-type {
+    margin-right: 0px;
+  } */
+  .page-template-home #qoutes .quote {
+    font-size: 16px !important;
+  }
+  .page-template-home .carousel-control {
+    width: 10%;
+  }
+  .page-template-home .carousel .item {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  footer {
+    font-size: 12px;
+  }
+  footer .contact-me, footer .bottom-contact {
+    padding: 5px 10px !important;
+  }
+  .page-template-home .about-me {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  #freeModal .input-holder {
+    display: block;
+  }
+  #freeModal input {
+    width: 100%;
+    margin-left:0px;
+    margin-right: 0px;
+  }
+  .is-table-row {
+    width: 100%;
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+  .is-table-row .img-container {
+    display: block;
+  }
+  .is-table-row {
+    display: inline-block;
+  }
+  .page-template-home #about-me {
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+  .page-template-home .sections .service-section {
+    display: inline-block;
+    width: 100%;
+    margin-bottom: 10px;
+  }
+  .page-template-home .divider {
+    display: none;
+  }
+  .page-template-home .about-me img {
+    width: 100%;
+    height: auto;
+  }
+  .page-background {
+    background-size: contain;
+    width: 100%;
+  }
+  .padding {
+    display: none;
+  }
+  .about-container {
+    padding-top: 50px !important;
+    padding-bottom: 50px !important;
+  }
+  .transparent-container {
+    background-color: white;
+  }
+  .white-container, .clear-container, .transparent-container {
+    padding: 0px 15px;
+    background-color: white;
+  }
+  .page-template-training-services .page-background, .page-template-contact .page-background, .page-template-first-session .page-background {
+    background-image: none;
+    background-color: white;
+  }
+  .multi-item-carousel .glyphicon-chevron-left {
+    left: 0px;
+    margin-left: -5px;
+    opacity: .3;
+  }
+  .multi-item-carousel .glyphicon-chevron-right {
+    margin-right: -5px;
+  }
+  .page-template-first-session .clear-container {
+    padding-bottom: 50px;
+  }
+  .page-template-training-services .transparent-container {
+    padding-top: 25px;
+    padding-bottom: 25px;
+  }
+  .page-template-training-services h4 {
+    padding-top: 25px;
+    padding-bottom: 25px;
+  }
+  .page-template-first-session h1, .page-template-training-services h1 {
+    padding-top: 25px;
+    padding-bottom: 25px;
+  }
+  .page-template-training-services h1 {
+    background-image: url(img/training-options-mobile.jpg);
+    background-size: cover;
+    background-position: bottom right;
+    background-repeat: no-repeat;
+    margin-bottom: 0px;
+    margin-left: -15px;
+    margin-right: -15px;
+    padding-left: 15px;
+    padding-right:15px;
+    margin-top: 0px;
+    margin-bottom: 25px;
+  }
+  .page-template-contact h1 {
+    background-image: url(img/contact-mobile.jpg);
+    background-size: cover;
+    background-position: bottom right;
+    background-repeat: no-repeat;
+    margin-bottom: 0px;
+    margin-left: -15px;
+    margin-right: -15px;
+    padding-left: 15px;
+    padding-right:15px;
+    margin-top: 0px;
+    margin-bottom: 25px !important;
+    padding-top: 25px;
+    padding-bottom: 25px;
+  }
+
+  .page-template-contact .clear-container {
+    padding-top: 0px;
+    padding-bottom: 0px;
+  }
+
+  .page-template-contact .white {
+    padding-top: 15px !important;
+    padding-bottom: 50px !important;
+  }
+  .page-template-first-session h1, .page-template-first-session h2 {
+    background-image: url(img/first-session-mobile.jpg);
+    background-size: cover;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    margin-bottom: 0px;
+    margin-left: -15px;
+    margin-right: -15px;
+    padding-left: 15px;
+    padding-right:15px;
+    margin-top: 0px;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    margin-bottom: 25px;
+  }
+}
+
+@media (max-width:992px) {
+  .page-template-training-services .content-container img {
+    max-width: 200px;
+  }
+}
+
+@media (min-width:767px) {
+  .multi-item-carousel .carousel-inner a {
+    cursor: not-allowed!important;
+  }
+
+@media (max-width: 992px) {
+  .page-template-home .about-me .img-container {
+    text-align: center;
   }
 }

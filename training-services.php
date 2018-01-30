@@ -26,7 +26,7 @@
         <?php if( have_rows( 'training_options') ){ ?>
         <?php $counter = 0; while ( have_rows( 'training_options') ) { the_row(); $counter++; $rowCounter++; ?>
         <?php if ($rowCounter == 1 ){ echo "<div class='row training-row'>"; } ?>
-        <div class="col-md-3 col-sm-6 col-xs-12 content-container">
+        <div class="col-md-3 col-sm-3 col-xs-12 content-container">
           <a href="#" data-toggle="modal" data-target=".modal-<?php echo $counter; ?>">
             <?php $image=get_sub_field( 'img'); ?>
             <img class="" src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>" title="<?php echo $image['title']; ?>">
