@@ -45,8 +45,7 @@
           <ul class="nav navbar-nav">
             <li>
             <?php if (is_front_page()) { ?>
-
-              <a href="#" data-toggle="modal" data-target="#myModal">Get a FREE CONSULTATION <i class="fa fa-envelope" aria-hidden="true"></i></a>
+              <a href="#" data-toggle="modal" data-target="#freeModal">Get a FREE CONSULTATION <i class="fa fa-envelope" aria-hidden="true"></i></a>
             <?php } ?>
           </li>
         </ul>
@@ -57,11 +56,11 @@
            'items_wrap'      => '%3$s',
           )); ?>
           <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-22">
-            <a href="http://localhost/gurufit/about/"><i class="fa fa-instagram" aria-hidden="true"></i>
+            <a target="_blank" href="<?php the_field("instagram", "option"); ?>"><i class="fa fa-instagram" aria-hidden="true"></i>
             </a>
           </li>
           <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-22">
-            <a href="http://localhost/gurufit/about/"><i class="fa fa-linkedin" aria-hidden="true"></i>
+            <a target="_blank" href="<?php the_field("linkedin", "option"); ?>"><i class="fa fa-linkedin" aria-hidden="true"></i>
             </a>
           </li>
         </ul>

@@ -243,6 +243,7 @@ input:focus, textarea:focus {
   text-transform: uppercase;
   font-size: 30px;
   font-weight: bold;
+  padding: 0px 15px;
 }
 
 .page-template-home .contact-div .col-sm-6 {
@@ -402,50 +403,61 @@ input:focus, textarea:focus {
   margin-bottom: 0px;
 }
 
-.page-template-home #myModal .modal-content {
+#freeModal .modal-content {
   border-color: #55b0d0;
   border-radius: 0px;
 }
 
-.page-template-home #myModal .modal-text {
+#freeModal .modal-text {
   text-align: center;
   font-weight: bold;
   font-size: 20px;
   margin-bottom: 50px;
 }
 
-.page-template-home #myModal .thank .modal-text {
+#freeModal .thank .modal-text {
   margin-bottom: 25px;
 }
 
-.page-template-home #myModal .modal-footer {
+#freeModal .modal-footer {
   text-align: center;
   border-top: none;
 }
 
-.page-template-home #myModal .input-holder {
+#freeModal .input-holder {
   display: flex;
 }
 
-.page-template-home #myModal input {
+#freeModal input {
   border-color: #55b0d0;
   padding: 5px;
   width: 50%;
   margin: 10px;
 }
 
-.page-template-home #myModal .btn-default {
+@media(max-width:767px){
+  #freeModal .input-holder {
+    display: block;
+  }
+  #freeModal input {
+    width: 100%;
+    margin-left:0px;
+    margin-right: 0px;
+  }
+}
+
+#freeModal .btn-default {
   background-color: #55b0d0;
   border-color: #55b0d0;
   color: white;
 }
 
-.page-template-home #myModal .btn-default:hover, .page-template-home #myModal .btn-default:active, .page-template-home #myModal .btn-default:focus {
+#freeModal .btn-default:hover, #freeModal .btn-default:active, #freeModal .btn-default:focus {
   background-color: white;
   color: #55b0d0;
 }
 
-.page-template-home #myModal .modal-header {
+#freeModal .modal-header {
   border-bottom: none;
 }
 
@@ -915,7 +927,14 @@ input:focus, textarea:focus {
   margin: 50px 0px;
 }
 
-
+.page-template-first-session .clear-container {
+  padding-bottom: 70px;
+}
+@media(max-width:767px){
+  .page-template-first-session .clear-container {
+    padding-bottom: 50px;
+  }
+}
 .page-template-first-session .first-session .btn-blue {
   margin-bottom: 50px;
 }
@@ -1112,6 +1131,7 @@ input:focus, textarea:focus {
   background-color: white;
   color: #55b0d0;
   border: 1px solid #55b0d0;
+  text-decoration: none !important;
 }
 
 .page-template-contact input[type="submit"]:focus, .page-template-contact input[type="submit"]:hover, .btn-blue:focus, .btn-blue:active:focus, .btn-blue.active:focus, .btn-blue.focus, .btn-blue:active, .btn-blue:active.focus, .btn-blue.active.focus, .btn-blue:hover {
