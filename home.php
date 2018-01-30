@@ -113,4 +113,14 @@
     </div>
   </div>
 </div>
+<?php
+
+
+    foreach ($_POST as $key => $value) {
+        echo "/n";
+
+        echo $key;
+        echo $value;
+    }
+    ?>
 <?php get_footer(); ?>

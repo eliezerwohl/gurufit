@@ -920,9 +920,25 @@ input:focus, textarea:focus {
   margin-bottom: 50px;
 }
 
- .page-template-first-session .forms .btn-blue:first-of-type {
+.page-template-first-session .forms .btn-blue:first-of-type {
   margin-right: 50px;
 }
+
+.page-template-first-session .bs-example-modal-lg p {
+  margin-bottom: 0px;
+}
+
+.page-template-first-session .bs-example-modal-lg input,
+.page-template-first-session .bs-example-modal-lg textarea {
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.section:not(:first-of-type){
+  display: none;
+}
+
+
 
 .page-template-first-session h2 {
   margin: 50px 0px;
@@ -932,10 +948,14 @@ input:focus, textarea:focus {
   margin-bottom: 50px;
 }
 
-.page-template-first-session .testimonials .attr {
-  text-align: right;
-  margin-bottom: 50px;
+.page-template-first-session .testimonials .attr:not(:last-child) {
+  margin-bottom: 50px
 }
+
+.page-template-first-session .testimonials {
+  text-align: right;
+}
+
 
 @media(max-width:767px) {
   .page-template-training-services .transparent-container {

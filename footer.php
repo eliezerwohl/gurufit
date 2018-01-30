@@ -15,7 +15,7 @@
   <script type="text/javascript" src="<?php bloginfo('template_url'); ?>/js/parallax.js"></script>
 	<script type="text/javascript" src="<?php bloginfo('template_url'); ?>/js/carousel.js"></script>
 	<script type="text/javascript" src="<?php bloginfo('template_url'); ?>/js/modal.js"></script>
-
+	<script type="text/javascript" src="<?php bloginfo('template_url'); ?>/js/personal.js"></script>
 	<?php if ( (get_field("active", "option") ) && (is_front_page()) ) { ?>
 		<div id="specialModal" class="modal fade" tabindex="-1" role="dialog">
 	  <div class="modal-dialog" role="document">
