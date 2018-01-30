@@ -1,7 +1,7 @@
 <?php /* Template Name: Home */ ?>
 <?php get_header(); ?>
 <!-- Modal -->
-<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+<div class="modal fade" id="freeModal" tabindex="-1" role="dialog" aria-labelledby="freeModalLabel">
   <div class="modal-dialog" role="document">
     <div class="modal-content">
       <div class="modal-header">
@@ -26,7 +26,6 @@
     </div>
   </div>
 </div>
-
 <div class='hero'>
   <div class="center">
     <img src="<?php bloginfo('template_url'); ?>/img/logo-yellow.png">
@@ -48,11 +47,12 @@
         <?php  } ?>
       <?php }; ?>
       <div class="btn-holder text-center">
-        <a class="btn btn-default" href="#" data-toggle="modal" data-target="#myModal">Free Consultation</a>
+        <a class="btn btn-default" href="#" data-toggle="modal" data-target="#freeModal">Free Consultation</a>
       </div>
     </div>
     <div class="col-md-6 col-xs-12 img-container">
-      <img src="<?php bloginfo('template_url'); ?>/img/eric-belt.jpg">
+      <?php $image = get_field('about_me_image'); ?>
+			<img src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>" title="<?php echo $image['title']; ?>">
     </div>
   </div>
 </div>
@@ -113,14 +113,4 @@
     </div>
   </div>
 </div>
-<?php
-
-
-    foreach ($_POST as $key => $value) {
-        echo "/n";
-
-        echo $key;
-        echo $value;
-    }
-    ?>
 <?php get_footer(); ?>
