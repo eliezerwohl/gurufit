@@ -2,7 +2,7 @@
 <footer class="text-center">
 	<div class="contact">
 		<a class="contact-me" target="_blank" href="mailto:<?php the_field('email','option'); ?>"><i class="fa fa-envelope-o" aria-hidden="true"></i> <?php the_field("email", "option"); ?></a>
-		<a class="contact-me" target="_blank" href="tel:<?php the_field("phone", "option"); ?>"><i class="fa fa-phone" aria-hidden="true"></i><?php the_field("phone", "option"); ?></a>
+		<a class="contact-me" target="_blank" href="tel:<?php the_field("phone", "option"); ?>"><i class="fa fa-phone" aria-hidden="true"></i> <?php the_field("phone", "option"); ?></a>
 	</div>
 	<div>
 		<span class="bottom-contact">Copyright <?php echo date("Y"); ?> GURUFIT LLC</span>
@@ -15,7 +15,6 @@
   <script type="text/javascript" src="<?php bloginfo('template_url'); ?>/js/parallax.js"></script>
 	<script type="text/javascript" src="<?php bloginfo('template_url'); ?>/js/carousel.js"></script>
 	<script type="text/javascript" src="<?php bloginfo('template_url'); ?>/js/modal.js"></script>
-	<script type="text/javascript" src="<?php bloginfo('template_url'); ?>/js/personal.js"></script>
 	<?php if ( (get_field("active", "option") ) && (is_front_page()) ) { ?>
 		<div id="specialModal" class="modal fade" tabindex="-1" role="dialog">
 	  <div class="modal-dialog" role="document">
