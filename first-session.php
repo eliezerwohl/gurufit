@@ -29,7 +29,9 @@
   <div class="clear-container container-fluid first-session">
     <div class="row">
       <div class="col-md-12">
-        <h1 class="animated slideInLeft">First Session</h1>
+        <div class="mobile-background">
+          <h1 class="animated slideInLeft">First Session</h1>
+        </div>
         <?php the_field("main"); ?>
         <?php if( have_rows( 'main_list') ){ ?>
         <ul class="bullet-list">
@@ -47,7 +49,9 @@
   <div class="white-container container-fluid">
     <div class="row">
       <div class="col-md-4">
-        <h2>Forms</h2>
+        <div class="mobile-background">
+          <h2>Forms</h2>
+        </div>
       </div>
       <div class="col-md-8 forms">
         <p>Please fill out a Fitness Profile before your first session.  Either Download the form to print and fill out or complete it online.</p>
@@ -103,7 +107,9 @@
 <div class="white-container container-fluid testimonials">
   <div class="row">
     <div class="col-md-12">
-      <h2>Testimonials</h2>
+      <div class="mobile-background">
+        <h2>Testimonials</h2>
+      </div>
       <?php while ( have_rows( 'testimonials') ) { the_row(); ?>
       <p><?php the_sub_field("quote"); ?></p>
       <p class="attr"><?php the_sub_field("attr"); ?></p>

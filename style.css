@@ -1224,7 +1224,7 @@ footer .bottom-contact {
     padding-top: 25px;
     padding-bottom: 25px;
   }
-  .page-template-training-services h1 {
+  .page-template-training-services .mobile-background {
     background-image: url(img/training-options-mobile.jpg);
     background-size: cover;
     background-position: bottom right;
@@ -1234,10 +1234,18 @@ footer .bottom-contact {
     margin-right: -15px;
     padding-left: 15px;
     padding-right:15px;
+    padding-top: 25px;
+    padding-bottom: 25px;
     margin-top: 0px;
     margin-bottom: 25px;
   }
-  .page-template-contact h1 {
+  .mobile-background h1, .mobile-background h2 {
+      margin-bottom: 0px !important;
+      margin-top: 0px;
+      padding-top: 0px;
+      padding-bottom: 0px;
+  }
+  .page-template-contact .mobile-background {
     background-image: url(img/contact-mobile.jpg);
     background-size: cover;
     background-position: bottom right;
@@ -1262,7 +1270,7 @@ footer .bottom-contact {
     padding-top: 15px !important;
     padding-bottom: 50px !important;
   }
-  .page-template-first-session h1, .page-template-first-session h2 {
+  .page-template-first-session .mobile-background {
     background-image: url(img/first-session-mobile.jpg);
     background-size: cover;
     background-position: bottom;
