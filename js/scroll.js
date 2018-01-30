@@ -15,6 +15,5 @@ jQuery(document).ready(function($) {
     else {
       navbar.removeClass("navbar-fixed-top");
     }
-
   }
 });

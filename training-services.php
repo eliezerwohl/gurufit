@@ -4,7 +4,9 @@
   <div class="clear-container container-fluid">
     <div class="row">
       <div class="col-md-12">
-        <h1 class="animated slideInLeft">Training Services</h1>
+        <div class="mobile-background">
+          <h1 class="animated slideInLeft">Training Services</h1>
+        </div>
         <p><?php the_field("main"); ?></p>
         <?php if( have_rows( 'main_list') ){ ?>
         <div class="col-md-10">
