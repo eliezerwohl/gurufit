@@ -11,8 +11,15 @@
         <div class="input-front">
           <p class="modal-text">Please fill out the information below for your free consultation</p>
           <div class="input-holder">
-            <input placeholder="Name">
-            <input placeholder="Telephone">
+            <form id="freeForm">
+              <input value="title1" name="Free Consultation" type="hidden">
+              <div class="col-sm-6 col-sm-12">
+              <input class="col-sm-12" name="name" placeholder="Name">
+            </div>
+              <div class="col-sm-6 col-sm-12">
+              <input class="col-sm-12" name="telephone" placeholder="Telephone">
+            </div>
+            </form>
           </div>
         </div>
         <div class="thank" style="display: none;">
@@ -21,7 +28,7 @@
         </div>
       </div>
       <div class="modal-footer">
-        <button id="submit" type="button" class="btn btn-default">Send</button>
+        <button id="freeSubmit" type="button" class="btn btn-default">Send</button>
       </div>
     </div>
   </div>

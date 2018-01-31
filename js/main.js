@@ -1,39 +1,18 @@
 jQuery(document).ready(function($) {
 
-  $("#submit").on("click", function(){
 
-    $(".input-front, .modal-footer").fadeOut("fast", function(){
-      $(".thank").fadeIn("fast");
-    })
-  })
-	//hover menu
-	// $('.dropdown').mouseenter(function() {
-	// 	if (window.innerWidth > 767){
-	// 		$('.dropdown-menu').stop(true, true).slideUp(500)
-	// 		$(this).find('.dropdown-menu').stop(true, true).delay(200).slideDown(500);
-	// 	}
-	// })
- //    $('.dropdown').mouseleave(function() {
- //        if (window.innerWidth > 767){
- //            $('.dropdown-menu').slideUp(500)
- //        }
- //    })
- //    function mobileFix() {
- //        var mobileFix = $(".mobile-fix");
- //        if (window.innerWidth <= 767){
- //        	//full size to mobile js fix
- //        		$('.dropdown-menu').stop(true, true).css("display", "");
- //        }
- //        if ((window.innerWidth <= 767) && (mobileFix.hasClass("nav-justified"))) {
- //            mobileFix.removeClass("nav-justified").addClass("navbar-nav");
- //        } else if ((window.innerWidth > 767) && (mobileFix.hasClass("navbar-nav"))) {
- //            mobileFix.removeClass("navbar-nav").addClass("nav-justified");
- //        }
- //    }
- //    mobileFix();
- //    $(window).resize(function() {
- //        mobileFix();
- //    })
-
-    
-})
+jQuery("#freeSubmit").on("click", function() {
+  var url = window.location.origin + "/gurufit/test.php"; // the script where you handle the form input.
+  jQuery.ajax({
+    type: "POST",
+    url: url,
+    data: jQuery("#freeForm").serialize(), // serializes the form's elements.
+    success: function(data) {
+      $(".input-front, .modal-footer").fadeOut("fast", function(){
+        $(".thank").fadeIn("fast");
+      })
+      console.log(data); // show response from the php script.
+    }
+  });
+});
+});
