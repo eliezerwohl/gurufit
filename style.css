@@ -769,8 +769,10 @@ input:focus, textarea:focus {
   margin-bottom: 50px;
 }
 
-.page-template-first-session .forms .btn-blue:first-of-type {
-  margin-right: 50px;
+@media(min-width:500px){
+  .page-template-first-session .forms .btn-blue:first-of-type {
+    margin-right: 50px;
+  }
 }
 
 .page-template-first-session .bs-example-modal-lg p {
@@ -1066,13 +1068,15 @@ footer .bottom-contact {
     background: rgba(255, 255, 255, 0.8);
   }
 }
-
-@media (max-width:400px) {
-  .page-template-first-session .forms .btn-blue {
-    float: left;
+.page-template-first-session .forms .a-btn {
+  display: inline-block;
+}
+@media (max-width:500px) {
+  .page-template-first-session .forms .a-btn  {
+    display: block;
+    text-align: center;
     clear:both;
-    margin-bottom: 15px;
-
+    padding-top: 15px;
   }
 }
 
