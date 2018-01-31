@@ -28,8 +28,8 @@
         <div class="mobile-background">
           <h1 class="animated slideInLeft">Contact</h1>
         </div>
-        <p style="margin-bottom:0px"><span class="bold">Email:</span><a target="_blank" href="mailto:<?php the_field("email", "option"); ?>"><?php the_field("email", "option"); ?></p>
-        <p><span class="bold">Telephone:</span><a target="_blank" href="tel:<?php the_field("phone", "option"); ?>"><?php the_field("phone", "option"); ?></a></p>
+        <p style="margin-bottom:0px"><span class="bold">Email:</span> <a target="_blank" href="mailto:<?php the_field("email", "option"); ?>"><?php the_field("email", "option"); ?></p>
+        <p><span class="bold">Telephone:</span> <a target="_blank" href="tel:<?php the_field("phone", "option"); ?>"><?php the_field("phone", "option"); ?></a></p>
         <p><?php the_field("main"); ?></p>
     </div>
   </div>

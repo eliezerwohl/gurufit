@@ -56,7 +56,10 @@
       <div class="col-md-8 forms">
         <p>Please fill out a Fitness Profile before your first session.  Either Download the form to print and fill out or complete it online.</p>
         <?php $file = get_field('file'); ?>
-        <a download class="btn-blue" href="<?php echo $file['url']; ?>">Download PDF</a><a class="btn-blue mirrorBtn" data-toggle="modal" href="#" data-target=".bs-example-modal-lg">Online Form</a>
+        <!-- <div class="col-md-12 btn-container"> -->
+        <p class="a-btn"><a download class="btn-blue" href="<?php echo $file['url']; ?>">Download PDF</a></p>
+        <p class="a-btn"><a class="btn-blue mirrorBtn" data-toggle="modal" href="#" data-target=".bs-example-modal-lg">Online Form</a></p>
+      <!-- </div> -->
         <div class="modal fade bs-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel">
           <div class="modal-dialog modal-md" role="document">
             <div class="modal-content">
