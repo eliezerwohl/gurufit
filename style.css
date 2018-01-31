@@ -617,7 +617,7 @@ input:focus, textarea:focus {
 }
 
 .multi-item-carousel .carousel-inner>.item {
-  transition: 500ms ease-in-out left;
+  transition: 600ms ease-in-out left;
 }
 
 .multi-item-carousel .carousel-inner .active.left {
@@ -1301,9 +1301,36 @@ footer .bottom-contact {
   .multi-item-carousel .carousel-inner a {
     cursor: not-allowed!important;
   }
+}
 
 @media (max-width: 992px) {
   .page-template-home .about-me .img-container {
     text-align: center;
+  }
+}
+@media(max-width:767px){
+.item .col-xs-12:not(:first-child) img {
+     display: none !important;
+  }
+  .item:not(.active){
+    z-index: -1;
+  }
+  .multi-item-carousel .carousel-inner>.item {
+    transition: 1000ms ease-in-out all;
+  }
+  .multi-item-carousel .carousel-inner .active.left {
+    left: -200%;
+  }
+
+  .multi-item-carousel .carousel-inner .active.right {
+    left: 200%;
+  }
+
+  .multi-item-carousel .carousel-inner .next {
+    left: 200%;
+  }
+
+  .multi-item-carousel .carousel-inner .prev {
+    left: -200%;
   }
 }
