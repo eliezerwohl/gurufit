@@ -80,7 +80,7 @@
           <?php while ( have_rows( 'image_gallery') ) { the_row(); ?>
           <div class="item <?php if ($first){ echo 'active';  $first = false; } ?>">
             <?php $image=get_sub_field('img'); ?>
-            <div class="col-xs-4"><a href="#1"><img class="img-pop img-responsive" src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>" title="<?php echo $image['title']; ?>"></a></div>
+            <div class="col-sm-4 col-xs-12"><img class="img-pop img-responsive" src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>" title="<?php echo $image['title']; ?>"></div>
           </div>
           <?php  } ?>
         </div>
