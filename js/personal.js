@@ -22,18 +22,19 @@ jQuery(".prev").on("click", function(){
   section[current - 1].style.display = "block";
   current--;
   mirror()
-
 })
 
-jQuery("#theForm").submit(function(e) {
+// jQuery(".submit").submit(function(e) {
+jQuery(".submit").on("click", function() {
   var url = window.location.origin + "/gurufit/test.php"; // the script where you handle the form input.
   jQuery.ajax({
     type: "POST",
     url: url,
     data: jQuery("#theForm").serialize(), // serializes the form's elements.
     success: function(data) {
-      console.log(data); // show response from the php script.
+      jQuery(".section, #mirror").hide();
+      jQuery(".thank").show();
+      // console.log(data); // show response from the php script.
     }
   });
-  e.preventDefault(); // avoid to execute the actual submit of the form.
 });

@@ -10,14 +10,16 @@
   <div class="white-container">
     <?php the_field("main"); ?>
     <div class='text-center'>
-      <button class="btn-blue">Contact Me</button>
+      <a href="<?php echo home_url(); ?>/contact">
+        <button class="btn-blue">Contact Me</button>
+      </a>
     </div>
   </div>
   <div class="padding"></div>
 </div>
   <?php if( have_rows( 'image_gallery') ){ ?>
   <?php $first = true;?>
-  <div class="container-fluid carousel-container">
+  <div class="container-fluid carousel-container" "id="myModal"">
     <div class="row">
       <div class="col-md-12">
         <div class="carousel slide multi-item-carousel" id="theCarousel">

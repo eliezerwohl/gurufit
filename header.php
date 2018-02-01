@@ -5,7 +5,6 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="shortcut icon" href="<?php bloginfo('template_url'); ?>/images/favicon.ico" type="image/x-icon">
-    <link rel="icon" href="<?php bloginfo('template_url'); ?>/images/favicon.ico" type="image/x-icon">
     <title>
       <?php bloginfo('name'); ?>
     </title>
@@ -13,7 +12,6 @@
     <link href="https://fonts.googleapis.com/css?family=Raleway|Roboto" rel="stylesheet">
     <link
     rel='stylesheet' id='sb-font-awesome-css'  href='https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css' type='text/css' media='all' />
-<!--     <link rel="stylesheet" type="text/css" href="<?php bloginfo('template_url'); ?>/styles/bootstrap.min.css"> -->
     <link rel="stylesheet" type="text/css" href="<?php bloginfo('template_url'); ?>/style.css">
     <?php wp_head(); ?>
   </head>
@@ -36,7 +34,7 @@
             <!-- <a class="navbar-brand visible-xs" href="<?php echo home_url(); ?>">Guru Fit Club</a> -->
           <?php } else { ?>
             <a class="navbar-brand brand" href="<?php echo home_url(); ?>">
-              <img src="<?php bloginfo('template_url'); ?>/img/logo-yellow.png">
+              <img src="<?php bloginfo('template_url'); ?>/img/logo-yellow.png" alt="Guru Fit Club Logo">
             </a>
           <?php } ?>
         </div>
@@ -45,7 +43,7 @@
           <ul class="nav navbar-nav">
             <li>
             <?php if (is_front_page()) { ?>
-              <a href="#" data-toggle="modal" data-target="#freeModal">Get a FREE CONSULTATION <i class="fa fa-envelope" aria-hidden="true"></i></a>
+              <a href="#" class="modal-brand" data-toggle="modal" data-target="#freeModal">Get a FREE CONSULTATION <i class="fa fa-envelope" aria-hidden="true"></i></a>
             <?php } ?>
           </li>
         </ul>

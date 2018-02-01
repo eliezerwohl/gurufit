@@ -367,11 +367,13 @@ input:focus, textarea:focus {
 #freeModal input {
   border-color: #55b0d0;
   padding: 5px;
-  width: 50%;
-  margin: 10px;
+  /* width: 50%;
+  margin: 10px; */
+  margin-bottom: 25px;
 }
-
-
+#freeForm {
+  width: 100%;
+}
 
 #freeModal .btn-default {
   background-color: #55b0d0;
@@ -1050,6 +1052,10 @@ footer .bottom-contact {
     padding-right: 0px;
     padding-left: 0px
   }
+  .page-template-home #freeForm .col-sm-6 {
+    padding-right: 15px;
+    padding-left: 15px
+  }
   .is-table-row {
     display: table;
     width: 100%;
@@ -1333,4 +1339,39 @@ footer .bottom-contact {
   .multi-item-carousel .carousel-inner .prev {
     left: -200%;
   }
+}
+
+div.wpcf7-mail-sent-ok {
+	border: none !important;
+}
+
+div.wpcf7-mail-sent-ng {
+	border: none !important;
+}
+
+.warn {
+  margin-bottom: 20px !important;
+}
+
+.thank {
+  display: none;
+}
+div.wpcf7-response-output {
+	margin: 15px 15px 15px !important;
+	padding: 0.2em 1em;
+}
+@media (max-width:830px) and (min-width:767px){
+  .page-template-home  .modal-brand {
+    padding-right: 0px;
+    padding-left: 0px;
+    margin-left:-15px;
+    font-size: 14px;
+  }
+  #navbar li a {
+    font-size: 14px;
+  }
+}
+#first-session-modal .modal-header {
+  border-bottom: none;
+  padding-bottom:0px!important;
 }

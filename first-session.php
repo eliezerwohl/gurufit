@@ -10,8 +10,15 @@
         <div class="input-front">
           <p class="modal-text">Please fill out the information below for your free consultation</p>
           <div class="input-holder">
-            <input placeholder="Name">
-            <input placeholder="Telephone">
+            <form id="freeForm">
+              <input value="title1" name="Free Consultation" type="hidden">
+              <div class="col-sm-6 col-sm-12">
+              <input class="col-sm-12" name="name" placeholder="Name">
+            </div>
+              <div class="col-sm-6 col-sm-12">
+              <input class="col-sm-12" name="telephone" placeholder="Telephone">
+            </div>
+            </form>
           </div>
         </div>
         <div class="thank" style="display: none;">
@@ -20,7 +27,7 @@
         </div>
       </div>
       <div class="modal-footer">
-        <button id="submit" type="button" class="btn btn-default">Send</button>
+        <button id="freeSubmit" type="button" class="btn btn-default">Send</button>
       </div>
     </div>
   </div>
@@ -60,7 +67,7 @@
         <p class="a-btn"><a download class="btn-blue" href="<?php echo $file['url']; ?>">Download PDF</a></p>
         <p class="a-btn"><a class="btn-blue mirrorBtn" data-toggle="modal" href="#" data-target=".bs-example-modal-lg">Online Form</a></p>
       <!-- </div> -->
-        <div class="modal fade bs-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel">
+        <div id="first-session-modal" class="modal fade bs-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel">
           <div class="modal-dialog modal-md" role="document">
             <div class="modal-content">
               <div class="modal-header">
@@ -80,23 +87,26 @@
                     <p><?php the_sub_field("txt"); ?></p>
                     <?php if (get_sub_field("type") == "Single"){ ?>
                     <input name="<?php the_sub_field("txt"); ?>"  value='goodbye'>
-                    <?php }
-                      else { ?>
+                    <?php } else { ?>
                     <textarea name="<?php the_sub_field("txt"); ?>"  value='goodbye'></textarea>
                     <?php    } ?>
                     <?php  } ?>
+                    <?php if (get_sub_field('warning')) { ?>
+                     <p class="warn"><?php the_sub_field('warning'); ?></p>
+                    <?php } ?>
                     <?php if ($sectionCounter != 1){ ?>
-                    <button class="prev btn-blue float-left">Previous</previous>
+                    <a class="prev btn-blue float-left">Previous</a>
                     <?php } ?>
                     <?php if ($sectionCounter == $rowCount){ ?>
-                    <button type="submit" class="submit btn-blue">Submit</button>
+                    <a type="submit" class="submit btn-blue">Submit</a>
                     <?php } else { ?>
-                    <button class="next btn-blue">Next</button>
+                    <a class="next btn-blue">Next</a>
                     <?php } ?>
                   </div>
                   <?php } ?>
                   <?php  } ?>
                 </form>
+                <div class="thank"><h4 class="text-center">Thank you.  Your information has been submitted.<h4>
               </div>
             </div>
           </div>
@@ -104,6 +114,7 @@
       </div>
     </div>
   </div>
+</div>
   <div class="padding"></div>
 </div>
 <?php if( have_rows( 'main_list') ){ ?>
