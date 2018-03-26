@@ -77,6 +77,7 @@
               <div class="modal-body">
                 <?php if( have_rows( 'section') ){ ?>
                 <form id="theForm">
+                  <span id="my_email_ajax_nonce" data-nonce="<?php echo wp_create_nonce( 'my_email_ajax_nonce' ); ?>"></span>
                   <?php $sectionCounter=0; $counter = 0; $rowCount=count( get_field( 'section' ) ); ?>
                   <?php while ( have_rows( 'section') ) { the_row(); $counter++; $sectionCounter++; ?>
                   <div class="section" data-current="<?php echo $sectionCounter; ?>">

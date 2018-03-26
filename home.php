@@ -12,6 +12,7 @@
           <p class="modal-text"><?php the_field("consult_txt", "option"); ?></p>
           <div class="input-holder">
             <form id="freeForm">
+              <span id="my_email_ajax_nonce" data-nonce="<?php echo wp_create_nonce( 'my_email_ajax_nonce' ); ?>"></span>
               <input value="title1" name="Free Consultation" type="hidden">
               <div class="col-sm-6 col-sm-12">
               <input class="col-sm-12" name="name" placeholder="Name">

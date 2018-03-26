@@ -34,19 +34,19 @@ function ieFix() {
     if (msie > 0) {
       $(".carousel-container").hide()
         // IE 10 or older => return version number
-       
+
     }
 
     var trident = ua.indexOf('Trident/');
     if (trident > 0) {
         // IE 11 => return version number
        $(".carousel-container").hide()
-    
+
     }
 }
 ieFix()
 jQuery("#freeSubmit").on("click", function() {
-  var url = window.location.origin + "/test.php"; // the script where you handle the form input.
+  var url = window.location.origin + "/wp-admin/admin-ajax.php"; // the script where you handle the form input.
   jQuery.ajax({
     type: "POST",
     url: url,

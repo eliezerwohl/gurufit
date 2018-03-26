@@ -25,7 +25,7 @@ jQuery(".prev").on("click", function(){
 })
 
 jQuery(".submit").on("click", function() {
-  var url = window.location.origin + "/test.php"; // the script where you handle the form input.
+  var url = window.location.origin + "/wp-admin/admin-ajax.php"; // the script where you handle the form input.
   jQuery.ajax({
     type: "POST",
     url: url,
