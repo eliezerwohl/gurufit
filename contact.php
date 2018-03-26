@@ -26,7 +26,7 @@
     <div class="row">
       <div class="col-md-12">
         <div class="mobile-background">
-          <h1 class="animated slideInLeft">Contact</h1>
+          <h1 class="animated slideInLeft"><?php the_field("contact_header"); ?></h1>
         </div>
         <p style="margin-bottom:0px"><span class="bold">Email:</span> <a target="_blank" href="mailto:<?php the_field("email", "option"); ?>"><?php the_field("email", "option"); ?></p>
         <p><span class="bold">Telephone:</span> <a target="_blank" href="tel:<?php the_field("phone", "option"); ?>"><?php the_field("phone", "option"); ?></a></p>
@@ -34,7 +34,7 @@
     </div>
   </div>
 </div>
-  <div class="container-fluid white ">
+  <div class="container-fluid white-container">
     <div class="row">
       <div class="col-md-6 col-md-offset-3 ">
         <?php echo do_shortcode( '[contact-form-7 id="83" title="Contact Page"]' ); ?>

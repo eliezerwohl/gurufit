@@ -1,5 +1,5 @@
 jQuery(document).ready(function($) {
-  var navbar =  $("#navbar");
+  var navbar= $("#navbar");
   scrollFunction()
   $(document).scroll(function() {
     scrollFunction()

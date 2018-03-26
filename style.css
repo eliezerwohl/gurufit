@@ -3,7 +3,7 @@ Theme URI: https://eandvdesign.com
 Author: E and V Design (Elie W. And Vicky K.)
 Author URI: https://eandvdesign.com
 Description: Custom made theme for Guru Fit Club
-Version: 1.0
+Version: 1.1
 */
 
 html, body {
@@ -114,6 +114,59 @@ input:focus, textarea:focus {
   margin-bottom: 50px;
 }
 
+/* Contact Form */
+div.wpcf7-mail-sent-ok {
+	border: none !important;
+}
+
+div.wpcf7-mail-sent-ng {
+	border: none !important;
+}
+
+.warn {
+  margin-bottom: 20px !important;
+}
+
+.thank {
+  display: none;
+}
+
+.ajax-loader {
+  display: none !important;
+}
+div.wpcf7-response-output {
+	margin: 15px 15px 15px !important;
+	padding: 0.2em 1em;
+}
+
+::-webkit-input-placeholder {
+  /* Chrome */
+  color: #707070;
+  opacity: .3;
+  font-style: italic;
+}
+
+:-ms-input-placeholder {
+  /* IE 10+ */
+  color: #707070;
+  opacity: .3;
+  font-style: italic;
+}
+
+::-moz-placeholder {
+  /* Firefox 19+ */
+  color: #707070;
+  opacity: .3;
+  font-style: italic;
+}
+
+:-moz-placeholder {
+  /* Firefox 4 - 18 */
+  color: #707070;
+  opacity: .3;
+  font-style: italic;
+}
+
 /*pre-navbar*/
 
 .pre-navbar {
@@ -145,8 +198,6 @@ input:focus, textarea:focus {
   margin-bottom: 0px;
 }
 
-.navbar-default .navbar-collapse {}
-
 .page-template-home #navbar {
   background-color: #b7b7b7;
   border-color: #b7b7b7;
@@ -164,6 +215,12 @@ input:focus, textarea:focus {
 
 #navbar a:hover {
   color: #55b0d0;
+}
+
+#navbar .brand img:hover,
+#navbar .brand img:focus,
+#navbar .brand img:active {
+  opacity:0.7
 }
 
 .navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:hover, .navbar-default .navbar-nav>.active>a:focus {
@@ -193,13 +250,9 @@ input:focus, textarea:focus {
 #navbar .brand img {
   height: 50px;
 }
-
-
-
 .navbar-nav>li>a {
   padding: 20px 15px;
 }
-
 .page-template-home .navbar-nav>li>a {
   padding: 15px;
 }
@@ -247,7 +300,6 @@ input:focus, textarea:focus {
   padding-left: 15px;
   padding-right: 15px;
 }
-
 
 .page-template-home .about-me {
   margin-top: 50px;
@@ -298,6 +350,7 @@ input:focus, textarea:focus {
   font-size: 20px;
   padding: 10px 50px;
   margin-bottom: 0px;
+  text-align: center;
 }
 
 .page-template-home .training-options .img-container img {
@@ -367,8 +420,6 @@ input:focus, textarea:focus {
 #freeModal input {
   border-color: #55b0d0;
   padding: 5px;
-  /* width: 50%;
-  margin: 10px; */
   margin-bottom: 25px;
 }
 #freeForm {
@@ -390,73 +441,6 @@ input:focus, textarea:focus {
   border-bottom: none;
 }
 
-.super-modal {
-  display: none;
-  /* Hidden by default */
-  position: fixed;
-  /* Stay in place */
-  z-index: 400;
-  /* Sit on top */
-  padding-top: 100px;
-  Location of the box left: 0;
-  top: 0;
-  width: 100%;
-  /* Full width */
-  height: 100%;
-  /* Full height */
-  overflow: auto;
-  /* Enable scroll if needed */
-  background-color: rgb(0, 0, 0);
-  /* Fallback color */
-  background-color: rgba(0, 0, 0, 0.9);
-  /* Black w/ opacity */
-}
-
-/* Modal Content (Image) */
-
-.super-modal-content {
-  margin: auto;
-  display: block;
-  width: 80%;
-  max-width: 700px;
-}
-
-/* Add Animation - Zoom in the Modal */
-
-.super-modal-content, {
-  animation-name: zoom;
-  animation-duration: 0.6s;
-}
-
-@keyframes zoom {
-  from {
-    transform: scale(0)
-  }
-  to {
-    transform: scale(1)
-  }
-}
-
-/* The Close Button */
-
-.close-modal {
-  position: absolute;
-  top: 15px;
-  right: 35px;
-  color: #f1f1f1;
-  font-size: 40px;
-  font-weight: bold;
-  transition: 0.3s;
-}
-
-.close-modal:hover, .close-modal:focus {
-  color: #bbb;
-  text-decoration: none;
-  cursor: pointer;
-}
-
-/* 100% Image Width on Smaller Screens */
-
 .page-template-home .contact-div {
   margin-top: 50px;
 }
@@ -469,37 +453,6 @@ input:focus, textarea:focus {
   text-align: center;
 }
 
-.ajax-loader {
-  display: none !important;
-}
-
-::-webkit-input-placeholder {
-  /* Chrome */
-  color: #707070;
-  opacity: .3;
-  font-style: italic;
-}
-
-:-ms-input-placeholder {
-  /* IE 10+ */
-  color: #707070;
-  opacity: .3;
-  font-style: italic;
-}
-
-::-moz-placeholder {
-  /* Firefox 19+ */
-  color: #707070;
-  opacity: .3;
-  font-style: italic;
-}
-
-:-moz-placeholder {
-  /* Firefox 4 - 18 */
-  color: #707070;
-  opacity: .3;
-  font-style: italic;
-}
 
 /*About */
 
@@ -531,10 +484,6 @@ input:focus, textarea:focus {
   height: 200px;
   width: 100%;
 }
-
-/* .page-template-about .white-container {
-
-} */
 
 .page-template-training-services .page-background {
   background-image: url(img/training-options-bg.jpg);
@@ -574,17 +523,12 @@ input:focus, textarea:focus {
 
 
 .page-template-contact .clear-container {
-  padding-top: 100px;
+  padding-top: 75px;
   padding-bottom: 50px;
 }
 
 .page-template-contact .clear-container h1 {
   margin-bottom: 50px;
-}
-
-.white-container {
-  /* background-color: white; */
-  background: rgba(255, 255, 255, 0.8);
 }
 
 .bullet-list {
@@ -603,6 +547,11 @@ input:focus, textarea:focus {
   margin-top: 20px;
 }
 
+
+.page-template-training-services .white-container {
+  padding-right: 15px;
+  padding-left: 15px;
+}
 .page-template-training-services .tel {
   color: #55b0d0;
 }
@@ -746,9 +695,9 @@ input:focus, textarea:focus {
   }
 }
 
-.page-template-training-services .transparent-container {
+.page-template-training-services .white-container {
   padding-top: 75px;
-  padding-bottom: 75px;
+  padding-bottom: 25px;
 }
 
 .page-template-first-session h1 {
@@ -786,12 +735,9 @@ input:focus, textarea:focus {
   width: 100%;
   margin-bottom: 20px;
 }
-.section:not(:first-of-type){
+.page-template-first-session .section:not(:first-of-type){
   display: none;
 }
-
-
-
 .page-template-first-session h2 {
   margin: 50px 0px;
 }
@@ -819,28 +765,32 @@ input:focus, textarea:focus {
   margin-bottom: 10px;
 }
 
-
-
-
 .page-template-about .white-container {
   padding-top: 50px;
   padding-bottom: 50px;
 }
 
-.page-template-training-services .transparent-container .content-container p {
-  /* margin-top: -10px; */
+.page-template-training-services .white-container .content-container p {
+  margin-bottom: 0px;
   color: #55b0d0;
   font-size: 14px;
   line-height: 1.5 !important;
 }
 
-.page-template-training-services .transparent-container .training-row .content-container {
+.page-template-training-services .white-container .content-container a:hover,
+.page-template-training-services .white-container .content-container a:hover p {
+  text-decoration: none !important;
+  opacity: 0.5 !important;
+}
+
+
+.page-template-training-services .white-container .training-row .content-container {
   margin-bottom: 50px;
 }
 
 @media (max-width:767px) {
-  .page-template-training-services .transparent-container .training-row .content-container {
-    margin-bottom: 25px;
+  .page-template-training-services .white-container .training-row .content-container {
+    margin-bottom: 50px;
   }
   .page-template-training-services .content-container img {
     height: 125px !important;
@@ -857,13 +807,7 @@ input:focus, textarea:focus {
 
 /*Contact*/
 
-/* .page-template-contact .clear-container {
-  margin-bottom: 50px;
-}  */
-.white {
-  background: rgba(255, 255, 255, 0.8);
-}
-.page-template-contact .white {
+.page-template-contact .white-container {
   padding: 75px 15px;
 }
 
@@ -891,14 +835,12 @@ input:focus, textarea:focus {
   margin-top:25px;
 }
 
-
 .page-template-contact input[type="submit"]:focus, .page-template-contact input[type="submit"]:hover, .btn-blue:focus, .btn-blue:active:focus, .btn-blue.active:focus, .btn-blue.focus, .btn-blue:active, .btn-blue:active.focus, .btn-blue.active.focus, .btn-blue:hover {
   background-color: #55b0d0;
   color: white;
 }
 
 /* animation */
-
 /* credit https://github.com/daneden/animate.css */
 
 .animated {
@@ -994,6 +936,22 @@ input:focus, textarea:focus {
   text-align: center;
 }
 
+
+/* 404 */
+.error404 h1 {
+  margin-bottom: 50px;
+    margin-top: 50px;
+    font-weight: bold;
+    color: #55b0d0;
+    text-align: center;
+    font-size: 50px;
+}
+.error404 .four {
+  min-height: calc(100vh - 160px);
+}
+
+/* FOOTER */
+
 footer {
   padding: 20px 15px;
   color: white;
@@ -1002,12 +960,8 @@ footer {
 
 footer a {
   color: white !important;
+  font-size: 16px;
 }
-
-footer .contact-me {
-  padding: 10px 10px;
-}
-
 footer .contact-me:hover {
   color: #707070;
 }
@@ -1018,9 +972,10 @@ footer .bottom-contact {
   padding-top: 10px;
 }
 
+
 /* media query */
 
-@media(max-width: 767px) {
+@media(max-width:767px){
   footer .contact-me {
     display: inline-block;
     width: 100%;
@@ -1029,23 +984,13 @@ footer .bottom-contact {
   footer .contact {
     margin-bottom: 0px;
   }
-}
-
-
-
-
-
-
-
-
-
-@media only screen and (max-width: 700px) {
-  .super-modal-content {
-    width: 100%;
+  footer a, footer {
+    font-size: 12px !important;
+  }
+  footer .contact-me, footer .bottom-contact {
+    padding: 5px 10px !important;
   }
 }
-
-
 
 @media(min-width:767px) {
   .quote-container .container-fluid, .page-template-home .col-sm-6 {
@@ -1070,14 +1015,14 @@ footer .bottom-contact {
   .is-table-row img {
     vertical-align: bottom;
   }
-  .transparent-container {
+  .white-container {
     background: rgba(255, 255, 255, 0.8);
   }
 }
 .page-template-first-session .forms .a-btn {
   display: inline-block;
 }
-@media (max-width:500px) {
+@media (max-width:767px) {
   .page-template-first-session .forms .a-btn  {
     display: block;
     text-align: center;
@@ -1085,6 +1030,7 @@ footer .bottom-contact {
     padding-top: 15px;
   }
 }
+
 
 @media(max-width:767px) {
   #navbar .brand img {
@@ -1131,12 +1077,12 @@ footer .bottom-contact {
     padding-bottom: 15px;
   }
 
-  /* .page-template-first-session .forms .btn-blue:first-of-type {
-    margin-right: 0px;
-  } */
+
+
   .page-template-home #qoutes .quote {
     font-size: 16px !important;
   }
+
   .page-template-home .carousel-control {
     width: 10%;
   }
@@ -1144,12 +1090,8 @@ footer .bottom-contact {
     padding-left: 15px;
     padding-right: 15px;
   }
-  footer {
-    font-size: 12px;
-  }
-  footer .contact-me, footer .bottom-contact {
-    padding: 5px 10px !important;
-  }
+
+
   .page-template-home .about-me {
     padding-left: 15px;
     padding-right: 15px;
@@ -1200,10 +1142,10 @@ footer .bottom-contact {
     padding-top: 50px !important;
     padding-bottom: 50px !important;
   }
-  .transparent-container {
+  .white-container {
     background-color: white;
   }
-  .white-container, .clear-container, .transparent-container {
+  .white-container, .clear-container, .white-container {
     padding: 0px 15px;
     background-color: white;
   }
@@ -1222,7 +1164,7 @@ footer .bottom-contact {
   .page-template-first-session .clear-container {
     padding-bottom: 50px;
   }
-  .page-template-training-services .transparent-container {
+  .page-template-training-services .white-container {
     padding-top: 25px;
     padding-bottom: 25px;
   }
@@ -1234,8 +1176,8 @@ footer .bottom-contact {
     padding-top: 25px;
     padding-bottom: 25px;
   }
-  .page-template-training-services .mobile-background {
-    background-image: url(img/training-options-mobile.jpg);
+
+  .mobile-background {
     background-size: cover;
     background-position: bottom right;
     background-repeat: no-repeat;
@@ -1248,6 +1190,10 @@ footer .bottom-contact {
     padding-bottom: 25px;
     margin-top: 0px;
     margin-bottom: 25px;
+  }
+  .page-template-training-services .mobile-background {
+    background-image: url(img/training-options-mobile.jpg);
+
   }
   .mobile-background h1, .mobile-background h2 {
       margin-bottom: 0px !important;
@@ -1257,18 +1203,6 @@ footer .bottom-contact {
   }
   .page-template-contact .mobile-background {
     background-image: url(img/contact-mobile.jpg);
-    background-size: cover;
-    background-position: bottom right;
-    background-repeat: no-repeat;
-    margin-bottom: 0px;
-    margin-left: -15px;
-    margin-right: -15px;
-    padding-left: 15px;
-    padding-right:15px;
-    margin-top: 0px;
-    margin-bottom: 25px !important;
-    padding-top: 25px;
-    padding-bottom: 25px;
   }
 
   .page-template-contact .clear-container {
@@ -1276,24 +1210,12 @@ footer .bottom-contact {
     padding-bottom: 0px;
   }
 
-  .page-template-contact .white {
+  .page-template-contact .clear-container {
     padding-top: 15px !important;
     padding-bottom: 50px !important;
   }
   .page-template-first-session .mobile-background {
     background-image: url(img/first-session-mobile.jpg);
-    background-size: cover;
-    background-position: bottom;
-    background-repeat: no-repeat;
-    margin-bottom: 0px;
-    margin-left: -15px;
-    margin-right: -15px;
-    padding-left: 15px;
-    padding-right:15px;
-    margin-top: 0px;
-    padding-top: 25px;
-    padding-bottom: 25px;
-    margin-bottom: 25px;
   }
 }
 
@@ -1341,25 +1263,7 @@ footer .bottom-contact {
   }
 }
 
-div.wpcf7-mail-sent-ok {
-	border: none !important;
-}
 
-div.wpcf7-mail-sent-ng {
-	border: none !important;
-}
-
-.warn {
-  margin-bottom: 20px !important;
-}
-
-.thank {
-  display: none;
-}
-div.wpcf7-response-output {
-	margin: 15px 15px 15px !important;
-	padding: 0.2em 1em;
-}
 @media (max-width:830px) and (min-width:767px){
   .page-template-home  .modal-brand {
     padding-right: 0px;
@@ -1374,4 +1278,11 @@ div.wpcf7-response-output {
 #first-session-modal .modal-header {
   border-bottom: none;
   padding-bottom:0px!important;
+}
+
+@media(max-width:767px) and (min-width:600px){
+  .about-container {
+    padding-top: 150px !important;
+    padding-bottom: 150px !important;
+  }
 }
