@@ -31,8 +31,44 @@ function move_jquery_into_footer( $wp_scripts ) {
     $wp_scripts->add_data( 'jquery-migrate', 'group', 1 );
 }
 
+// if you want only logged in users to access this function use this hook
+add_action('wp_ajax_mail_before_submit', 'mycustomtheme_send_mail_before_submit');
 
+// if you want none logged in users to access this function use this hook
+add_action('wp_ajax_nopriv_mail_before_submit', 'mycustomtheme_send_mail_before_submit');
 
-// add_filter('tiny_mce_before_init', 'wpa_45815');
+// if you want both logged in and anonymous users to get the emails, use both hooks above
+
+function mycustomtheme_send_mail_before_submit(){
+    check_ajax_referer('my_email_ajax_nonce');
+    if ( isset($_POST['action']) && $_POST['action'] == "mail_before_submit" ){
+$message = "";
+foreach ($_POST as $key => $value) {
+    if ($value === "title1") {
+      $message .=  "\r\n";
+      $message .=  "\r\n";
+      $message .=  str_replace("_"," ",strip_tags($key)) . ": ";
+      $message .=  "\r\n";
+      $message .=  "\r\n";
+    }
+    else{
+    $message .=  "\r\n";
+    $message .=  str_replace("_"," ",strip_tags($key)) . ": ";
+    $message .=  "\r\n";
+    $message .=  strip_tags($value);
+    $message .=  "\r\n";
+    }
+}
+$email = filter_var($_POST['email'], FILTER_SANITIZE_EMAIL);
+$formcontent="From: $name \n $email \n Message: $message";
+$recipient = "eliezerwohl@gmail.com";
+$subject = "Gurufitclub.com Contact";
+wp_mail($recipient, $subject, $message) or die("Error!");
+echo "got it";
+
+		}
+    echo 'error';
+    die();
+}
 
 ?>
