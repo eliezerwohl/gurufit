@@ -5,7 +5,7 @@
     <a class="contact-me" target="_blank" href="tel:<?php the_field("phone", "option"); ?>"><i class="fa fa-phone" aria-hidden="true"></i> <?php the_field("phone", "option"); ?></a>
   </div>
   <div>
-    <span class="bottom-contact">Copyright <?php echo date("Y"); ?> GURUFIT LLC</span>
+    <span class="bottom-contact">&copy; <?php echo date("Y"); ?> GURUFIT LLC</span>
     <span class="bottom-contact">Website by <a target="_blank" href="https://www.eandvdesign.com">E and V Design</a></span>
   </div>
   <?php wp_footer(); ?>

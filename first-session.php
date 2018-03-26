@@ -8,7 +8,7 @@
       </div>
       <div class="modal-body">
         <div class="input-front">
-          <p class="modal-text">Please fill out the information below for your free consultation</p>
+          <p class="modal-text"><?php the_field("consult_txt", "option"); ?></p>
           <div class="input-holder">
             <form id="freeForm">
               <input value="title1" name="Free Consultation" type="hidden">
@@ -37,7 +37,7 @@
     <div class="row">
       <div class="col-md-12">
         <div class="mobile-background">
-          <h1 class="animated slideInLeft">First Session</h1>
+          <h1 class="animated slideInLeft"><?php the_field("first_session_header"); ?></h1>
         </div>
         <?php the_field("main"); ?>
         <?php if( have_rows( 'main_list') ){ ?>
@@ -55,13 +55,13 @@
   </div>
   <div class="white-container container-fluid">
     <div class="row">
-      <div class="col-md-4">
+      <div class="col-sm-4">
         <div class="mobile-background">
-          <h2>Forms</h2>
+          <h2><?php the_field("forms_header"); ?></h2>
         </div>
       </div>
-      <div class="col-md-8 forms">
-        <p>Please fill out a Fitness Profile before your first session.  Either Download the form to print and fill out or complete it online.</p>
+      <div class="col-sm-8 forms">
+        <p><?php the_field("forms_text"); ?></p>
         <?php $file = get_field('file'); ?>
         <!-- <div class="col-md-12 btn-container"> -->
         <p class="a-btn"><a download class="btn-blue" href="<?php echo $file['url']; ?>">Download PDF</a></p>
@@ -86,9 +86,9 @@
                     <?php while ( have_rows( 'question') ) { the_row(); $counter++ ?>
                     <p><?php the_sub_field("txt"); ?></p>
                     <?php if (get_sub_field("type") == "Single"){ ?>
-                    <input name="<?php the_sub_field("txt"); ?>"  value='goodbye'>
+                    <input name="<?php the_sub_field("txt"); ?>">
                     <?php } else { ?>
-                    <textarea name="<?php the_sub_field("txt"); ?>"  value='goodbye'></textarea>
+                    <textarea name="<?php the_sub_field("txt"); ?>"></textarea>
                     <?php    } ?>
                     <?php  } ?>
                     <?php if (get_sub_field('warning')) { ?>
@@ -106,7 +106,7 @@
                   <?php } ?>
                   <?php  } ?>
                 </form>
-                <div class="thank"><h4 class="text-center">Thank you.  Your information has been submitted.<h4>
+                <div class="thank"><h4 class="text-center"><?php the_field("form_thank"); ?><h4>
               </div>
             </div>
           </div>
@@ -122,7 +122,7 @@
   <div class="row">
     <div class="col-md-12">
       <div class="mobile-background">
-        <h2>Testimonials</h2>
+        <h2><?php the_field("testimonials_header"); ?></h2>
       </div>
       <?php while ( have_rows( 'testimonials') ) { the_row(); ?>
       <p><?php the_sub_field("quote"); ?></p>

@@ -5,7 +5,7 @@
     <div class="row">
       <div class="col-md-12">
         <div class="mobile-background">
-          <h1 class="animated slideInLeft">Training Services</h1>
+          <h1 class="animated slideInLeft"><?php the_field("training_services_header"); ?></h1>
         </div>
         <p><?php the_field("main"); ?></p>
         <?php if( have_rows( 'main_list') ){ ?>
@@ -22,7 +22,7 @@
       <?php }; ?>
     </div>
   </div>
-  <div class="transparent-container container-fluid">
+  <div class="white-container container-fluid">
     <div class="row">
       <div class="col-md-8 col-md-offset-2 text-center">
         <?php if( have_rows( 'training_options') ){ ?>
@@ -66,7 +66,7 @@
 <div class="container-fluid">
   <div class="row">
     <div class="col-md-12">
-      <h4><a class="tel" target="_blank" href="tel:<?php the_field("phone", "option"); ?>">Questions? Call me!</a></h4>
+      <h4><a class="tel" target="_blank" href="tel:<?php the_field("phone", "option"); ?>"><?php the_field("call_me_text"); ?></a></h4>
     </div>
   </div>
 </div>
@@ -91,13 +91,5 @@
   </div>
 </div>
 <?php }; ?>
-<div id="myModal" class="modal super-modal">
-  <!-- The Close Button -->
-  <span class="close-modal">&times;</span>
-  <!-- Modal Content (The Image) -->
-  <img class="modal-content super-modal-content" id="img01">
-  <!-- Modal Caption (Image Text) -->
-  <!--   <div id="caption"></div> -->
-</div>
 </div>
 <?php get_footer(); ?>

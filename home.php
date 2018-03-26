@@ -9,7 +9,7 @@
       </div>
       <div class="modal-body">
         <div class="input-front">
-          <p class="modal-text">Please fill out the information below for your free consultation</p>
+          <p class="modal-text"><?php the_field("consult_txt", "option"); ?></p>
           <div class="input-holder">
             <form id="freeForm">
               <input value="title1" name="Free Consultation" type="hidden">
@@ -40,7 +40,7 @@
   </div>
 </div>
 <div class="container about-me">
-  <h2>About Me</h2>
+  <h2><?php the_field("about_me_header"); ?></h2>
   <div class="row">
     <div class="col-md-6 col-xs-12">
       <?php if( have_rows( 'about_me_text') ){ ?>
@@ -65,7 +65,7 @@
 </div>
 <?php if( have_rows( 'training_options') ){ ?>
 <div class="container-fluid training-options">
-  <h2>Training Services</h2>
+  <h2><?php the_field("training_services_header"); ?></h2>
   <div class="col-md-10 col-md-offset-1">
     <p class="text-center sub"><?php the_field("training_services_tagline"); ?></p>
   </div>

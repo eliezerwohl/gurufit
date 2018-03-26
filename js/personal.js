@@ -24,9 +24,8 @@ jQuery(".prev").on("click", function(){
   mirror()
 })
 
-// jQuery(".submit").submit(function(e) {
 jQuery(".submit").on("click", function() {
-  var url = window.location.origin + "/gurufit/test.php"; // the script where you handle the form input.
+  var url = window.location.origin + "/test.php"; // the script where you handle the form input.
   jQuery.ajax({
     type: "POST",
     url: url,
@@ -34,7 +33,7 @@ jQuery(".submit").on("click", function() {
     success: function(data) {
       jQuery(".section, #mirror").hide();
       jQuery(".thank").show();
-      // console.log(data); // show response from the php script.
+
     }
   });
 });
